@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thiago Rodrigues – Corretor Imobiliário | Imóveis de Alto Padrão</title>
+<meta name="description" content="Compra, venda e aluguel de imóveis com segurança e profissionalismo. Atendendo Feira de Santana, Salvador e Maceió.">
+<meta name="keywords" content="imóveis, corretor, Feira de Santana, Salvador, Maceió, casas, apartamentos, Thiago Rodrigues">
+<meta property="og:title" content="Thiago Rodrigues – Corretor Imobiliário">
+<meta property="og:description" content="Encontre o imóvel ideal com segurança e profissionalismo.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root {
+  --black: #0a0a0a;
+  --black2: #111111;
+  --black3: #181818;
+  --black4: #222222;
+  --gold: #c9a84c;
+  --gold2: #e8c96e;
+  --gold3: #f0d88a;
+  --gold-dark: #8a6d28;
+  --red: #8b1a1a;
+  --red2: #a52020;
+  --white: #f5f0e8;
+  --white2: #e8e0d0;
+  --gray: #888878;
+  --gray2: #555548;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+  --glass: rgba(255,255,255,0.04);
+  --glass-border: rgba(201,168,76,0.15);
+  --shadow: 0 20px 60px rgba(0,0,0,0.6);
+  --shadow-gold: 0 0 30px rgba(201,168,76,0.12);
+  --transition: all 0.4s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+[data-theme="light"] {
+  --black: #f0ece4;
+  --black2: #e8e4dc;
+  --black3: #ddd8ce;
+  --black4: #ccc8be;
+  --white: #1a1a1a;
+  --white2: #333333;
+  --gray: #666;
+  --gray2: #888;
+  --glass: rgba(0,0,0,0.03);
+  --glass-border: rgba(201,168,76,0.25);
+  --shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{background:var(--black);color:var(--white);font-family:var(--font-body);overflow-x:hidden;min-height:100vh}
+::selection{background:var(--gold);color:var(--black)}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:var(--black2)}
+::-webkit-scrollbar-thumb{background:var(--gold-dark);border-radius:3px}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 3rem;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(10,10,10,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--glass-border);transition:var(--transition)}
+nav.scrolled{height:60px;background:rgba(10,10,10,0.98)}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-logo-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--black);letter-spacing:-1px}
+.nav-logo-text{display:flex;flex-direction:column}
+.nav-logo-text span:first-child{font-family:var(--font-display);font-size:17px;color:var(--gold);font-weight:600;line-height:1;letter-spacing:0.5px}
+.nav-logo-text span:last-child{font-size:9px;color:var(--gray);letter-spacing:2px;text-transform:uppercase;margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-links a{text-decoration:none;color:var(--white2);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:500;transition:var(--transition);position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:var(--transition)}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.btn-nav{padding:8px 20px;border:1px solid var(--gold);color:var(--gold);background:transparent;font-family:var(--font-body);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:var(--transition);border-radius:2px}
+.btn-nav:hover{background:var(--gold);color:var(--black)}
+.btn-theme{width:36px;height:36px;border:1px solid var(--glass-border);background:var(--glass);color:var(--gray);cursor:pointer;border-radius:2px;transition:var(--transition);display:flex;align-items:center;justify-content:center;font-size:14px}
+.btn-theme:hover{color:var(--gold);border-color:var(--gold)}
+.nav-mobile-btn{display:none;background:none;border:none;color:var(--white);font-size:22px;cursor:pointer}
+
+/* ── HERO ── */
+#hero{height:100vh;position:relative;display:flex;flex-direction:column;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0a0a0a 0%,#0f0a05 40%,#0a0a0a 100%);z-index:0}
+.hero-bg::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80') center/cover no-repeat;opacity:0.12}
+.hero-bg::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 80% at 60% 50%,rgba(201,168,76,0.08) 0%,transparent 70%)}
+.hero-ornament{position:absolute;top:50%;right:-100px;transform:translateY(-50%);width:600px;height:600px;border:1px solid rgba(201,168,76,0.08);border-radius:50%;pointer-events:none;animation:pulse-ring 6s ease-in-out infinite}
+.hero-ornament::before{content:'';position:absolute;inset:40px;border:1px solid rgba(201,168,76,0.06);border-radius:50%;animation:pulse-ring 6s ease-in-out infinite reverse}
+@keyframes pulse-ring{0%,100%{transform:translateY(-50%) scale(1);opacity:0.6}50%{transform:translateY(-50%) scale(1.03);opacity:1}}
+.hero-content{position:relative;z-index:2;max-width:1400px;margin:0 auto;padding:0 3rem;padding-top:80px;flex:1;display:flex;flex-direction:column;justify-content:center;width:100%}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.25);padding:6px 16px;border-radius:2px;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:2rem;animation:fadeInUp 1s ease}
+.hero-title{font-family:var(--font-display);font-size:clamp(3rem,6vw,5.5rem);font-weight:300;line-height:1.1;margin-bottom:1.5rem;animation:fadeInUp 1s ease 0.2s both}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-title strong{font-weight:700;display:block}
+.hero-subtitle{font-size:15px;color:var(--gray);letter-spacing:1px;max-width:500px;line-height:1.8;margin-bottom:3rem;animation:fadeInUp 1s ease 0.4s both}
+.hero-btns{display:flex;flex-wrap:wrap;gap:16px;animation:fadeInUp 1s ease 0.6s both}
+.btn-primary{padding:14px 32px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--black);font-family:var(--font-body);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border:none;cursor:pointer;transition:var(--transition);border-radius:2px;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,168,76,0.4)}
+.btn-secondary{padding:14px 32px;background:transparent;color:var(--white);font-family:var(--font-body);font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;border:1px solid rgba(255,255,255,0.2);cursor:pointer;transition:var(--transition);border-radius:2px;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn-secondary:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+.btn-red{padding:14px 32px;background:var(--red);color:var(--white);font-family:var(--font-body);font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;border:none;cursor:pointer;transition:var(--transition);border-radius:2px;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.btn-red:hover{background:var(--red2);transform:translateY(-2px)}
+.hero-stats{position:relative;z-index:2;max-width:1400px;margin:0 auto;padding:0 3rem 3.5rem;display:flex;gap:4rem;width:100%;animation:fadeInUp 1s ease 0.8s both}
+.hero-stat{display:flex;flex-direction:column;gap:4px}
+.hero-stat-num{font-family:var(--font-display);font-size:2.5rem;font-weight:600;color:var(--gold);line-height:1}
+.hero-stat-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
+.hero-scroll{position:absolute;bottom:30px;right:3rem;display:flex;flex-direction:column;align-items:center;gap:8px;animation:bounce 2s ease-in-out infinite}
+.hero-scroll span{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gray);writing-mode:vertical-rl}
+.hero-scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,transparent,var(--gold),transparent)}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── SEARCH ── */
+#search-section{background:var(--black2);padding:4rem 3rem;position:relative}
+#search-section::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent)}
+.search-container{max-width:1200px;margin:0 auto}
+.section-label{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.section-title{font-family:var(--font-display);font-size:clamp(2rem,3vw,2.8rem);font-weight:300;margin-bottom:0.5rem}
+.section-title em{font-style:italic;color:var(--gold)}
+.section-divider{width:60px;height:1px;background:linear-gradient(to right,var(--gold),transparent);margin:1.5rem 0}
+.search-tabs{display:flex;gap:0;margin-bottom:2rem;border:1px solid var(--glass-border);border-radius:2px;overflow:hidden;width:fit-content}
+.search-tab{padding:10px 24px;font-size:11px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:var(--transition);background:transparent;border:none;color:var(--gray);font-family:var(--font-body)}
+.search-tab.active,.search-tab:hover{background:var(--gold);color:var(--black)}
+.search-box{background:var(--glass);border:1px solid var(--glass-border);border-radius:4px;padding:2rem;backdrop-filter:blur(10px)}
+.search-row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:16px;margin-bottom:16px}
+.search-row-2{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-bottom:16px}
+.search-row-3{display:grid;grid-template-columns:repeat(4,1fr) auto;gap:16px;align-items:end}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group label{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
+.form-group select,.form-group input{background:var(--black3);border:1px solid var(--glass-border);color:var(--white);padding:10px 14px;font-family:var(--font-body);font-size:13px;border-radius:2px;outline:none;transition:var(--transition);-webkit-appearance:none}
+.form-group select:focus,.form-group input:focus{border-color:var(--gold)}
+.form-group select option{background:var(--black3)}
+.search-checkboxes{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:1.5rem}
+.search-check{display:flex;align-items:center;gap:6px;cursor:pointer}
+.search-check input{width:14px;height:14px;accent-color:var(--gold)}
+.search-check span{font-size:11px;color:var(--gray)}
+.btn-search{padding:12px 40px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--black);font-family:var(--font-body);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border:none;cursor:pointer;transition:var(--transition);border-radius:2px;white-space:nowrap}
+.btn-search:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,168,76,0.4)}
+
+/* ── SECTIONS ── */
+section{padding:6rem 3rem}
+.section-inner{max-width:1400px;margin:0 auto}
+.section-header{margin-bottom:3rem}
+
+/* ── CATALOG GRID ── */
+.catalog-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2.5rem}
+.catalog-tab{padding:8px 20px;border:1px solid var(--glass-border);background:transparent;color:var(--gray);font-family:var(--font-body);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:var(--transition)}
+.catalog-tab.active,.catalog-tab:hover{background:var(--gold);color:var(--black);border-color:var(--gold)}
+.properties-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.property-card{background:var(--black2);border:1px solid var(--glass-border);border-radius:6px;overflow:hidden;transition:var(--transition);cursor:pointer;position:relative}
+.property-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-gold);border-color:rgba(201,168,76,0.3)}
+.property-img{height:220px;background:var(--black3);overflow:hidden;position:relative}
+.property-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease}
+.property-card:hover .property-img img{transform:scale(1.05)}
+.property-img-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--gray2)}
+.property-img-placeholder i{font-size:40px;color:var(--gold-dark);opacity:0.5}
+.property-img-placeholder span{font-size:11px;letter-spacing:1px}
+.property-badge{position:absolute;top:12px;left:12px;padding:4px 12px;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border-radius:2px}
+.badge-sale{background:var(--gold);color:var(--black)}
+.badge-rent{background:var(--red);color:var(--white)}
+.badge-new{background:#1a4a1a;color:#5dcc5d}
+.badge-hot{background:rgba(139,26,26,0.8);color:var(--white)}
+.badge-promo{background:rgba(28,28,140,0.8);color:#8888ff}
+.property-fav{position:absolute;top:12px;right:12px;width:32px;height:32px;background:rgba(0,0,0,0.5);border:1px solid var(--glass-border);color:var(--white);cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;transition:var(--transition)}
+.property-fav:hover,.property-fav.active{color:var(--red2);background:rgba(139,26,26,0.3)}
+.property-body{padding:1.25rem}
+.property-type{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+.property-name{font-family:var(--font-display);font-size:1.15rem;font-weight:600;margin-bottom:6px;color:var(--white);line-height:1.3}
+.property-city{font-size:11px;color:var(--gray);margin-bottom:12px;display:flex;align-items:center;gap:4px}
+.property-features{display:flex;gap:16px;margin-bottom:14px}
+.property-feature{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--gray2)}
+.property-feature i{font-size:12px;color:var(--gold-dark)}
+.property-footer{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid var(--glass-border)}
+.property-price{font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--gold)}
+.property-price small{font-size:0.7rem;color:var(--gray);font-family:var(--font-body);font-weight:400;display:block;line-height:1}
+.btn-detail{padding:7px 18px;background:transparent;border:1px solid var(--gold-dark);color:var(--gold);font-family:var(--font-body);font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:var(--transition)}
+.btn-detail:hover{background:var(--gold);color:var(--black)}
+
+/* ── ABOUT ── */
+#about{background:var(--black2);position:relative}
+#about::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.about-img-wrap{position:relative}
+.about-img{width:100%;height:520px;background:var(--black3);border-radius:4px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;border:1px solid var(--glass-border)}
+.about-img::before{content:'FOTO PROFISSIONAL';position:absolute;font-size:10px;letter-spacing:3px;color:var(--gray2);text-align:center;padding:2rem}
+.about-img i{font-size:60px;color:var(--gold-dark);opacity:0.3}
+.about-ornament{position:absolute;bottom:-20px;right:-20px;width:120px;height:120px;border:2px solid rgba(201,168,76,0.2);border-radius:4px}
+.about-ornament2{position:absolute;top:-20px;left:-20px;width:80px;height:80px;border:1px solid rgba(201,168,76,0.1);border-radius:4px}
+.about-badge{position:absolute;bottom:30px;left:-30px;background:var(--black2);border:1px solid var(--glass-border);padding:16px 20px;border-radius:4px;backdrop-filter:blur(10px);min-width:160px}
+.about-badge-num{font-family:var(--font-display);font-size:2rem;color:var(--gold);font-weight:700;line-height:1}
+.about-badge-label{font-size:10px;color:var(--gray);letter-spacing:1px}
+.about-content{}
+.about-quote{font-family:var(--font-display);font-size:1.8rem;font-style:italic;color:var(--gold);line-height:1.5;margin:1.5rem 0}
+.about-text{font-size:14px;color:var(--gray);line-height:1.9;margin-bottom:1.5rem}
+.about-areas{display:flex;flex-wrap:wrap;gap:10px;margin:1.5rem 0}
+.about-area{padding:6px 16px;border:1px solid var(--glass-border);font-size:11px;letter-spacing:1px;color:var(--gold);border-radius:2px}
+.about-specs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:2rem 0}
+.about-spec{padding:16px;background:var(--glass);border:1px solid var(--glass-border);border-radius:4px}
+.about-spec-icon{font-size:20px;color:var(--gold);margin-bottom:8px}
+.about-spec-title{font-size:12px;font-weight:600;letter-spacing:1px;margin-bottom:4px;text-transform:uppercase}
+.about-spec-desc{font-size:11px;color:var(--gray);line-height:1.6}
+
+/* ── STATS ANIMATED ── */
+.stats-section{background:linear-gradient(135deg,var(--black) 0%,var(--black3) 50%,var(--black) 100%);padding:4rem 3rem;border-top:1px solid var(--glass-border);border-bottom:1px solid var(--glass-border);position:relative;overflow:hidden}
+.stats-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 100% at 50% 50%,rgba(201,168,76,0.05) 0%,transparent 70%)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;max-width:1200px;margin:0 auto;position:relative}
+.stat-card{text-align:center;padding:2rem;position:relative}
+.stat-card::after{content:'';position:absolute;right:0;top:20%;bottom:20%;width:1px;background:var(--glass-border)}
+.stat-card:last-child::after{display:none}
+.stat-num{font-family:var(--font-display);font-size:3.5rem;font-weight:700;color:var(--gold);line-height:1;display:block;margin-bottom:8px}
+.stat-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gray)}
+
+/* ── FINANCE SIMULATOR ── */
+.simulator-wrap{background:var(--black2);border:1px solid var(--glass-border);border-radius:6px;padding:2.5rem;backdrop-filter:blur(10px)}
+.simulator-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.sim-inputs{}
+.sim-results{background:var(--black3);border:1px solid var(--glass-border);padding:2rem;border-radius:4px}
+.sim-result-title{font-family:var(--font-display);font-size:1.1rem;margin-bottom:1.5rem;color:var(--gold)}
+.sim-result-item{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--glass-border)}
+.sim-result-item:last-child{border-bottom:none}
+.sim-result-item span:first-child{font-size:12px;color:var(--gray)}
+.sim-result-item span:last-child{font-family:var(--font-display);font-size:1.2rem;font-weight:600;color:var(--gold)}
+.sim-result-big{text-align:center;padding:1.5rem;margin-top:1rem;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);border-radius:4px}
+.sim-result-big .value{font-family:var(--font-display);font-size:2.5rem;color:var(--gold);font-weight:700}
+.sim-result-big .label{font-size:10px;letter-spacing:2px;color:var(--gray);margin-top:4px}
+
+/* ── TESTIMONIALS ── */
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.testimonial-card{background:var(--black2);border:1px solid var(--glass-border);padding:2rem;border-radius:4px;position:relative}
+.testimonial-card::before{content:'\201C';position:absolute;top:16px;right:20px;font-family:var(--font-display);font-size:5rem;color:rgba(201,168,76,0.15);line-height:1}
+.testimonial-stars{color:var(--gold);font-size:12px;margin-bottom:1rem;letter-spacing:2px}
+.testimonial-text{font-size:13px;color:var(--gray);line-height:1.8;margin-bottom:1.5rem;font-style:italic}
+.testimonial-author{display:flex;align-items:center;gap:12px}
+.testimonial-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold-dark),var(--gold));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--black)}
+.testimonial-name{font-size:13px;font-weight:600}
+.testimonial-city{font-size:10px;color:var(--gold);letter-spacing:1px}
+
+/* ── FAQ ── */
+.faq-list{max-width:800px}
+.faq-item{border-bottom:1px solid var(--glass-border)}
+.faq-question{padding:1.25rem 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:14px;font-weight:500;transition:var(--transition)}
+.faq-question:hover{color:var(--gold)}
+.faq-question i{color:var(--gold);transition:var(--transition)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.4s ease;font-size:13px;color:var(--gray);line-height:1.8}
+.faq-item.open .faq-answer{max-height:200px;padding-bottom:1.25rem}
+.faq-item.open .faq-question i{transform:rotate(45deg)}
+
+/* ── NEWS ── */
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.news-card{background:var(--black2);border:1px solid var(--glass-border);border-radius:4px;overflow:hidden;transition:var(--transition);cursor:pointer}
+.news-card:hover{transform:translateY(-4px);border-color:rgba(201,168,76,0.2)}
+.news-img{height:160px;background:var(--black3);position:relative;overflow:hidden}
+.news-img i{position:absolute;bottom:12px;left:12px;font-size:30px;color:var(--gold-dark);opacity:0.4}
+.news-cat{position:absolute;top:12px;left:12px;padding:3px 10px;background:var(--gold);color:var(--black);font-size:8px;font-weight:700;letter-spacing:2px;text-transform:uppercase;border-radius:2px}
+.news-body{padding:1.25rem}
+.news-date{font-size:9px;letter-spacing:2px;color:var(--gray);margin-bottom:8px}
+.news-title{font-family:var(--font-display);font-size:1.05rem;line-height:1.4;margin-bottom:8px}
+.news-excerpt{font-size:12px;color:var(--gray);line-height:1.7}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:4rem;align-items:start}
+.contact-info{display:flex;flex-direction:column;gap:1.5rem}
+.contact-item{display:flex;align-items:flex-start;gap:16px;padding:1.5rem;background:var(--glass);border:1px solid var(--glass-border);border-radius:4px}
+.contact-item-icon{width:44px;height:44px;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:18px;flex-shrink:0}
+.contact-item-label{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gray);margin-bottom:4px}
+.contact-item-value{font-size:14px;color:var(--white)}
+.contact-form{background:var(--black2);border:1px solid var(--glass-border);padding:2.5rem;border-radius:6px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.form-field label{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
+.form-field input,.form-field select,.form-field textarea{background:var(--black3);border:1px solid var(--glass-border);color:var(--white);padding:12px 14px;font-family:var(--font-body);font-size:13px;border-radius:2px;outline:none;transition:var(--transition);-webkit-appearance:none;resize:none}
+.form-field input:focus,.form-field textarea:focus{border-color:var(--gold)}
+
+/* ── FOOTER ── */
+footer{background:var(--black2);border-top:1px solid var(--glass-border);padding:4rem 3rem 2rem}
+.footer-grid{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-brand{}
+.footer-logo{font-family:var(--font-display);font-size:1.8rem;color:var(--gold);font-weight:600;margin-bottom:1rem}
+.footer-desc{font-size:12px;color:var(--gray);line-height:1.8;max-width:280px}
+.footer-socials{display:flex;gap:12px;margin-top:1.5rem}
+.footer-social{width:36px;height:36px;border:1px solid var(--glass-border);color:var(--gray);display:flex;align-items:center;justify-content:center;font-size:15px;transition:var(--transition);text-decoration:none;border-radius:2px}
+.footer-social:hover{border-color:var(--gold);color:var(--gold)}
+.footer-col h4{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col ul a{text-decoration:none;font-size:12px;color:var(--gray);transition:var(--transition)}
+.footer-col ul a:hover{color:var(--gold)}
+.footer-bottom{max-width:1400px;margin:0 auto;padding-top:2rem;border-top:1px solid var(--glass-border);display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:11px;color:var(--gray2)}
+.footer-creci{font-size:10px;color:var(--gold-dark);letter-spacing:1px}
+
+/* ── FLOATING BTNS ── */
+.float-whatsapp{position:fixed;bottom:90px;right:28px;z-index:900;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;color:white;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:var(--transition);animation:float-pulse 2s ease-in-out infinite}
+.float-whatsapp:hover{transform:scale(1.1)}
+@keyframes float-pulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.4)}50%{box-shadow:0 4px 40px rgba(37,211,102,0.7)}}
+.float-top{position:fixed;bottom:28px;right:28px;z-index:900;width:44px;height:44px;background:rgba(201,168,76,0.15);border:1px solid var(--glass-border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);cursor:pointer;transition:var(--transition);opacity:0;pointer-events:none}
+.float-top.visible{opacity:1;pointer-events:auto}
+.float-top:hover{background:rgba(201,168,76,0.3)}
+.float-chat{position:fixed;bottom:90px;left:28px;z-index:900}
+.float-chat-btn{width:56px;height:56px;background:var(--black2);border:1px solid var(--glass-border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:22px;cursor:pointer;box-shadow:var(--shadow);transition:var(--transition)}
+.float-chat-btn:hover{background:rgba(201,168,76,0.1)}
+.float-chat-box{position:absolute;bottom:70px;left:0;width:300px;background:var(--black2);border:1px solid var(--glass-border);border-radius:8px;padding:1.25rem;display:none;box-shadow:var(--shadow)}
+.float-chat-box.open{display:block}
+.float-chat-header{display:flex;align-items:center;gap:10px;margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid var(--glass-border)}
+.float-chat-avatar{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--gold-dark),var(--gold));display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:14px;color:var(--black);font-weight:700}
+.float-chat-name{font-size:13px;font-weight:600}
+.float-chat-status{font-size:10px;color:#5dcc5d;display:flex;align-items:center;gap:4px}
+.float-chat-status::before{content:'';width:6px;height:6px;border-radius:50%;background:#5dcc5d}
+.float-chat-msgs{max-height:150px;overflow-y:auto;margin-bottom:1rem;display:flex;flex-direction:column;gap:8px}
+.chat-msg{padding:8px 12px;border-radius:8px;font-size:12px;max-width:85%;line-height:1.5}
+.chat-msg.agent{background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.15);color:var(--white2);align-self:flex-start;border-radius:0 8px 8px 8px}
+.chat-msg.user{background:var(--gold);color:var(--black);align-self:flex-end;border-radius:8px 8px 0 8px}
+.float-chat-input{display:flex;gap:8px}
+.float-chat-input input{flex:1;background:var(--black3);border:1px solid var(--glass-border);color:var(--white);padding:8px 12px;font-size:12px;border-radius:2px;outline:none;font-family:var(--font-body)}
+.float-chat-input button{padding:8px 12px;background:var(--gold);border:none;color:var(--black);cursor:pointer;border-radius:2px;font-size:13px}
+
+/* ── MODAL ── */
+.modal-overlay{position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,0.9);display:none;overflow-y:auto;padding:2rem}
+.modal-overlay.open{display:flex;align-items:flex-start;justify-content:center}
+.modal{background:var(--black2);border:1px solid var(--glass-border);border-radius:8px;max-width:900px;width:100%;position:relative;margin:auto}
+.modal-close{position:absolute;top:16px;right:16px;background:none;border:none;color:var(--gray);font-size:22px;cursor:pointer;z-index:10;transition:var(--transition)}
+.modal-close:hover{color:var(--gold)}
+.modal-gallery{height:400px;background:var(--black3);border-radius:8px 8px 0 0;overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center}
+.modal-gallery i{font-size:60px;color:var(--gold-dark);opacity:0.3}
+.modal-gallery-label{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:2px;color:var(--gray);background:rgba(0,0,0,0.5);padding:4px 16px;border-radius:20px}
+.modal-body{padding:2.5rem}
+.modal-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:1.5rem}
+.modal-title{font-family:var(--font-display);font-size:2rem;font-weight:600}
+.modal-price{font-family:var(--font-display);font-size:2rem;color:var(--gold);font-weight:700}
+.modal-location{font-size:12px;color:var(--gray);display:flex;align-items:center;gap:6px;margin-top:4px}
+.modal-specs{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1.5rem 0;padding:1.5rem;background:var(--black3);border-radius:4px}
+.modal-spec{text-align:center}
+.modal-spec-icon{font-size:20px;color:var(--gold);margin-bottom:4px}
+.modal-spec-val{font-size:16px;font-weight:600;margin-bottom:2px}
+.modal-spec-lbl{font-size:9px;color:var(--gray);letter-spacing:2px;text-transform:uppercase}
+.modal-tabs{display:flex;gap:0;border:1px solid var(--glass-border);border-radius:2px;overflow:hidden;margin-bottom:1.5rem;width:fit-content}
+.modal-tab{padding:8px 20px;font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:var(--transition);background:transparent;border:none;color:var(--gray);font-family:var(--font-body)}
+.modal-tab.active{background:var(--gold);color:var(--black)}
+.modal-tab-content{display:none}
+.modal-tab-content.active{display:block}
+.modal-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--glass-border)}
+
+/* ── AUTH MODAL ── */
+.auth-modal{max-width:440px}
+.auth-tabs{display:flex;border-bottom:1px solid var(--glass-border);margin-bottom:2rem}
+.auth-tab{flex:1;padding:12px;text-align:center;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:var(--transition);border-bottom:2px solid transparent;color:var(--gray)}
+.auth-tab.active{color:var(--gold);border-bottom-color:var(--gold)}
+
+/* ── ADMIN ── */
+.admin-modal{max-width:1100px}
+.admin-sidebar{width:200px;flex-shrink:0;border-right:1px solid var(--glass-border);padding:1.5rem 0}
+.admin-sidebar a{display:flex;align-items:center;gap:10px;padding:10px 1.5rem;font-size:12px;color:var(--gray);text-decoration:none;transition:var(--transition);cursor:pointer}
+.admin-sidebar a:hover,.admin-sidebar a.active{color:var(--gold);background:rgba(201,168,76,0.05)}
+.admin-sidebar a i{width:16px;font-size:15px}
+.admin-content{flex:1;padding:2rem;overflow-y:auto;max-height:600px}
+.admin-flex{display:flex;height:600px}
+.admin-stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:2rem}
+.admin-stat{background:var(--black3);border:1px solid var(--glass-border);padding:1.25rem;border-radius:4px}
+.admin-stat-val{font-family:var(--font-display);font-size:2rem;color:var(--gold);font-weight:700}
+.admin-stat-lbl{font-size:10px;color:var(--gray);letter-spacing:1px;margin-top:4px}
+.admin-table{width:100%;border-collapse:collapse;font-size:12px}
+.admin-table th{text-align:left;padding:10px 12px;font-size:9px;letter-spacing:2px;color:var(--gray);border-bottom:1px solid var(--glass-border);text-transform:uppercase}
+.admin-table td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,0.03)}
+.admin-table tr:hover td{background:rgba(255,255,255,0.02)}
+
+/* ── PROPERTY DETAIL ── */
+.prop-tags{display:flex;flex-wrap:wrap;gap:8px;margin:1rem 0}
+.prop-tag{padding:4px 12px;border:1px solid var(--glass-border);font-size:10px;color:var(--gray);border-radius:2px}
+.prop-map{height:200px;background:var(--black3);border-radius:4px;border:1px solid var(--glass-border);display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:13px;margin:1rem 0}
+.prop-similar{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--glass-border)}
+.similar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:1rem}
+.similar-card{background:var(--black3);border:1px solid var(--glass-border);padding:12px;border-radius:4px;cursor:pointer;transition:var(--transition)}
+.similar-card:hover{border-color:rgba(201,168,76,0.3)}
+.similar-price{font-family:var(--font-display);font-size:1rem;color:var(--gold)}
+.similar-name{font-size:11px;color:var(--white2);margin-top:2px}
+
+/* ── COMPARE BAR ── */
+.compare-bar{position:fixed;bottom:0;left:0;right:0;z-index:800;background:var(--black2);border-top:1px solid var(--glass-border);padding:12px 3rem;display:none;align-items:center;gap:1rem}
+.compare-bar.visible{display:flex}
+.compare-items{display:flex;gap:12px;flex:1}
+.compare-item{display:flex;align-items:center;gap:8px;padding:8px 14px;background:var(--black3);border:1px solid var(--glass-border);border-radius:2px;font-size:11px}
+.compare-item-close{color:var(--gray);cursor:pointer;font-size:13px;margin-left:4px}
+.compare-item-close:hover{color:var(--red)}
+.btn-compare-now{padding:10px 24px;background:var(--gold);color:var(--black);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;border-radius:2px}
+
+/* ── NOTIFICATION ── */
+.notification{position:fixed;top:90px;right:28px;z-index:2000;padding:14px 20px;background:var(--black2);border:1px solid var(--glass-border);border-radius:4px;font-size:13px;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow);transform:translateX(120%);transition:transform 0.4s ease;max-width:320px}
+.notification.show{transform:translateX(0)}
+.notification i{color:var(--gold);font-size:16px}
+.notification-success i{color:#5dcc5d}
+.notification-error i{color:var(--red2)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .simulator-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  nav{padding:0 1.5rem}
+  .nav-links,.nav-actions .btn-nav{display:none}
+  .nav-mobile-btn{display:block}
+  section{padding:4rem 1.5rem}
+  .hero-content{padding:0 1.5rem;padding-top:80px}
+  .hero-btns{flex-direction:column}
+  .hero-stats{flex-wrap:wrap;gap:2rem;padding:0 1.5rem 2rem}
+  #search-section{padding:3rem 1.5rem}
+  .search-row,.search-row-2,.search-row-3{grid-template-columns:1fr 1fr}
+  .properties-grid{grid-template-columns:1fr}
+  .modal-specs{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr}
+  .compare-bar{padding:12px 1.5rem}
+  .admin-flex{flex-direction:column}
+  .admin-sidebar{width:100%;border-right:none;border-bottom:1px solid var(--glass-border);display:flex;padding:0.5rem;overflow-x:auto}
+  .admin-sidebar a{padding:8px 12px;white-space:nowrap}
+}
+
+/* mobile nav menu */
+.mobile-menu{position:fixed;inset:0;z-index:999;background:rgba(10,10,10,0.98);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:2rem;display:none}
+.mobile-menu.open{display:flex}
+.mobile-menu a{text-decoration:none;color:var(--white);font-family:var(--font-display);font-size:2.5rem;font-style:italic;transition:var(--transition)}
+.mobile-menu a:hover{color:var(--gold)}
+.mobile-menu-close{position:absolute;top:24px;right:24px;background:none;border:none;color:var(--white);font-size:28px;cursor:pointer}
+
+/* Compare tooltip */
+.btn-compare{padding:7px 18px;background:transparent;border:1px solid var(--glass-border);color:var(--gray);font-family:var(--font-body);font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;border-radius:2px;transition:var(--transition)}
+.btn-compare:hover{border-color:var(--gold);color:var(--gold)}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon">TR</div>
+    <div class="nav-logo-text">
+      <span>Thiago Rodrigues</span>
+      <span>Corretor Imobiliário</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#hero">Início</a>
+    <a href="#catalogo">Imóveis</a>
+    <a href="#about">Sobre</a>
+    <a href="#financiamento">Financiamento</a>
+    <a href="#noticias">Mercado</a>
+    <a href="#contato">Contato</a>
+    <a href="#" onclick="showAdmin()">Admin</a>
+  </div>
+  <div class="nav-actions">
+    <button class="btn-theme" onclick="toggleTheme()" title="Alternar tema">
+      <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+    <button class="btn-nav" onclick="openAuth('login')">Entrar</button>
+    <button class="btn-nav" onclick="openAuth('register')" style="background:var(--gold);color:var(--black);border-color:var(--gold)">Cadastrar</button>
+  </div>
+  <button class="nav-mobile-btn" onclick="toggleMobileMenu()"><i class="fas fa-bars"></i></button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="toggleMobileMenu()"><i class="fas fa-times"></i></button>
+  <a href="#hero" onclick="toggleMobileMenu()">Início</a>
+  <a href="#catalogo" onclick="toggleMobileMenu()">Imóveis</a>
+  <a href="#about" onclick="toggleMobileMenu()">Sobre</a>
+  <a href="#financiamento" onclick="toggleMobileMenu()">Financiamento</a>
+  <a href="#contato" onclick="toggleMobileMenu()">Contato</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-ornament"></div>
+  <div class="hero-content">
+    <div class="hero-tag"><i class="fas fa-gem"></i> Imóveis de Alto Padrão</div>
+    <h1 class="hero-title">
+      Encontre o imóvel <em>ideal</em><br>
+      <strong>para transformar seus planos<br>em realidade.</strong>
+    </h1>
+    <p class="hero-subtitle">Compra, venda e aluguel de imóveis com segurança e profissionalismo em Feira de Santana, Salvador e Maceió.</p>
+    <div class="hero-btns">
+      <a href="#catalogo" class="btn-primary"><i class="fas fa-building"></i> Ver Imóveis</a>
+      <a href="#catalogo" class="btn-secondary" onclick="setCatalogTab('aluguel')"><i class="fas fa-key"></i> Alugar Imóvel</a>
+      <a href="#catalogo" class="btn-secondary" onclick="setCatalogTab('venda')"><i class="fas fa-home"></i> Comprar Imóvel</a>
+      <a href="#contato" class="btn-red"><i class="fas fa-envelope"></i> Entrar em Contato</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-num">+500</span>
+      <span class="hero-stat-label">Clientes Atendidos</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">+300</span>
+      <span class="hero-stat-label">Imóveis Vendidos</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">+100</span>
+      <span class="hero-stat-label">Imóveis Alugados</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">98%</span>
+      <span class="hero-stat-label">Satisfação</span>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- SEARCH -->
+<div id="search-section">
+  <div class="search-container">
+    <div class="section-label">Busca Inteligente</div>
+    <h2 class="section-title">Encontre seu <em>Imóvel Perfeito</em></h2>
+    <div class="section-divider"></div>
+    <div class="search-tabs">
+      <button class="search-tab active" onclick="setSearchTab(this,'Comprar')">Comprar</button>
+      <button class="search-tab" onclick="setSearchTab(this,'Alugar')">Alugar</button>
+      <button class="search-tab" onclick="setSearchTab(this,'Comercial')">Comercial</button>
+    </div>
+    <div class="search-box">
+      <div class="search-row">
+        <div class="form-group">
+          <label>Tipo de Imóvel</label>
+          <select id="s-type">
+            <option value="">Todos os tipos</option>
+            <option>Casa</option><option>Apartamento</option><option>Condomínio</option>
+            <option>Casa de Luxo</option><option>Cobertura</option><option>Terreno</option>
+            <option>Sala Comercial</option><option>Galpão</option><option>Fazenda</option>
+            <option>Chácara</option><option>Kitnet</option><option>Imóvel Comercial</option>
+            <option>Duplex</option><option>Triplex</option><option>Lote</option>
+            <option>Ponto Comercial</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Cidade</label>
+          <select id="s-city">
+            <option value="">Todas as cidades</option>
+            <option>Feira de Santana</option><option>Salvador</option><option>Maceió</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Bairro</label>
+          <input type="text" id="s-neighborhood" placeholder="Ex: Centro, Tomba...">
+        </div>
+        <div class="form-group">
+          <label>Quartos</label>
+          <select id="s-rooms">
+            <option value="">Qualquer</option>
+            <option>1+</option><option>2+</option><option>3+</option><option>4+</option>
+          </select>
+        </div>
+      </div>
+      <div class="search-row-2">
+        <div class="form-group">
+          <label>Valor Mínimo</label>
+          <input type="text" id="s-min" placeholder="R$ 0">
+        </div>
+        <div class="form-group">
+          <label>Valor Máximo</label>
+          <input type="text" id="s-max" placeholder="R$ sem limite">
+        </div>
+        <div class="form-group">
+          <label>Banheiros</label>
+          <select id="s-bath"><option value="">Qualquer</option><option>1+</option><option>2+</option><option>3+</option></select>
+        </div>
+        <div class="form-group">
+          <label>Garagem</label>
+          <select id="s-garage"><option value="">Qualquer</option><option>Sim</option><option>Não</option></select>
+        </div>
+        <div class="form-group">
+          <label>Área Total (m²)</label>
+          <input type="text" id="s-area" placeholder="Mínimo m²">
+        </div>
+        <div class="form-group">
+          <label>Área Construída</label>
+          <input type="text" id="s-built" placeholder="Mínimo m²">
+        </div>
+      </div>
+      <div class="search-checkboxes">
+        <label class="search-check"><input type="checkbox" id="s-finance"><span>Aceita Financiamento</span></label>
+        <label class="search-check"><input type="checkbox" id="s-pool"><span>Piscina</span></label>
+        <label class="search-check"><input type="checkbox" id="s-furnished"><span>Mobiliado</span></label>
+        <label class="search-check"><input type="checkbox" id="s-pet"><span>Pet Permitido</span></label>
+        <label class="search-check"><input type="checkbox" id="s-condo"><span>Condomínio Fechado</span></label>
+        <label class="search-check"><input type="checkbox" id="s-luxury"><span>Alto Padrão</span></label>
+      </div>
+      <button class="btn-search" onclick="runSearch()"><i class="fas fa-search"></i> &nbsp;Buscar Imóveis</button>
+    </div>
+  </div>
+</div>
+
+<!-- CATALOG -->
+<section id="catalogo">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Portfólio</div>
+      <h2 class="section-title">Nossos <em>Catálogos</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="catalog-tabs" id="catalogTabs">
+      <button class="catalog-tab active" data-tab="todos">🏆 Todos</button>
+      <button class="catalog-tab" data-tab="venda">🏠 À Venda</button>
+      <button class="catalog-tab" data-tab="aluguel">🔑 Aluguel</button>
+      <button class="catalog-tab" data-tab="apartamento">🏢 Apartamentos</button>
+      <button class="catalog-tab" data-tab="luxo">💎 Luxo</button>
+      <button class="catalog-tab" data-tab="condominio">🏘 Condomínios</button>
+      <button class="catalog-tab" data-tab="cobertura">🌆 Coberturas</button>
+      <button class="catalog-tab" data-tab="terreno">🏞 Terrenos</button>
+      <button class="catalog-tab" data-tab="comercial">🏢 Comercial</button>
+      <button class="catalog-tab" data-tab="destaque">⭐ Destaques</button>
+      <button class="catalog-tab" data-tab="oportunidade">🔥 Oportunidades</button>
+      <button class="catalog-tab" data-tab="promocao">💰 Promoções</button>
+      <button class="catalog-tab" data-tab="favorito">❤️ Favoritos</button>
+      <button class="catalog-tab" data-tab="novo">🆕 Novidades</button>
+    </div>
+    <div class="properties-grid" id="propertiesGrid"></div>
+    <div style="text-align:center;margin-top:3rem">
+      <button class="btn-secondary" onclick="loadMoreProperties()" id="loadMoreBtn"><i class="fas fa-plus"></i> Carregar Mais Imóveis</button>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-section">
+  <div class="stats-grid">
+    <div class="stat-card">
+      <span class="stat-num" data-target="500">0</span>
+      <span class="stat-label">Clientes Atendidos</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" data-target="300">0</span>
+      <span class="stat-label">Imóveis Vendidos</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" data-target="100">0</span>
+      <span class="stat-label">Imóveis Alugados</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" data-target="98" data-suffix="%">0%</span>
+      <span class="stat-label">Satisfação dos Clientes</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <div class="about-img"><i class="fas fa-user-tie"></i></div>
+        <div class="about-ornament"></div>
+        <div class="about-ornament2"></div>
+        <div class="about-badge">
+          <div class="about-badge-num">10+</div>
+          <div class="about-badge-label">Anos de Experiência</div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="section-label">Quem Sou</div>
+        <h2 class="section-title">Thiago <em>Rodrigues</em></h2>
+        <div class="section-divider"></div>
+        <p class="about-quote">"Minha missão é transformar o sonho da casa própria em realidade."</p>
+        <p class="about-text">Sou Thiago Rodrigues, corretor imobiliário com mais de 10 anos de experiência no mercado, especializado em imóveis residenciais e comerciais de alto padrão. Meu compromisso é oferecer um atendimento personalizado, transparente e seguro para cada cliente.</p>
+        <p class="about-text">Com profundo conhecimento dos mercados de Feira de Santana, Salvador e Maceió, atuo com ética, profissionalismo e dedicação para encontrar a solução imobiliária ideal para cada necessidade.</p>
+        <div class="about-areas">
+          <span class="about-area"><i class="fas fa-map-marker-alt"></i> Feira de Santana</span>
+          <span class="about-area"><i class="fas fa-map-marker-alt"></i> Salvador</span>
+          <span class="about-area"><i class="fas fa-map-marker-alt"></i> Maceió</span>
+        </div>
+        <div class="about-specs">
+          <div class="about-spec">
+            <div class="about-spec-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="about-spec-title">Segurança</div>
+            <div class="about-spec-desc">Toda transação com documentação completa e assessoria jurídica.</div>
+          </div>
+          <div class="about-spec">
+            <div class="about-spec-icon"><i class="fas fa-award"></i></div>
+            <div class="about-spec-title">Especialização</div>
+            <div class="about-spec-desc">Imóveis residenciais, comerciais e de alto padrão.</div>
+          </div>
+          <div class="about-spec">
+            <div class="about-spec-icon"><i class="fas fa-handshake"></i></div>
+            <div class="about-spec-title">Compromisso</div>
+            <div class="about-spec-desc">Acompanhamento completo do início ao fim da negociação.</div>
+          </div>
+          <div class="about-spec">
+            <div class="about-spec-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="about-spec-title">Resultados</div>
+            <div class="about-spec-desc">98% de satisfação comprovada por nossos clientes.</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="https://wa.me/5575988844834" target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://www.instagram.com/thiago_rodriguescorretor/" target="_blank" class="btn-secondary"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINANCIAMENTO -->
+<section id="financiamento" style="background:var(--black2);position:relative">
+  <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent)"></div>
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Simulador</div>
+      <h2 class="section-title">Simule seu <em>Financiamento</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="simulator-wrap">
+      <div class="simulator-grid">
+        <div class="sim-inputs">
+          <div class="form-field">
+            <label>Valor do Imóvel</label>
+            <input type="text" id="sim-valor" placeholder="R$ 500.000,00" oninput="calcFinancing()">
+          </div>
+          <div class="form-field">
+            <label>Entrada</label>
+            <input type="text" id="sim-entrada" placeholder="R$ 100.000,00" oninput="calcFinancing()">
+          </div>
+          <div class="form-field">
+            <label>Prazo (meses)</label>
+            <input type="range" id="sim-prazo" min="12" max="420" step="12" value="240" oninput="updatePrazo();calcFinancing()">
+            <span style="font-size:12px;color:var(--gold)" id="prazo-display">240 meses (20 anos)</span>
+          </div>
+          <div class="form-field">
+            <label>Taxa de Juros ao Ano (%)</label>
+            <input type="range" id="sim-juros" min="5" max="15" step="0.5" value="9" oninput="updateJuros();calcFinancing()">
+            <span style="font-size:12px;color:var(--gold)" id="juros-display">9.0% ao ano</span>
+          </div>
+          <div class="form-field">
+            <label>Sistema de Amortização</label>
+            <select id="sim-sistema" onchange="calcFinancing()">
+              <option value="price">SAC Price (parcelas fixas)</option>
+              <option value="sac">SAC (parcelas decrescentes)</option>
+            </select>
+          </div>
+          <button class="btn-primary" onclick="calcFinancing()" style="margin-top:1rem">
+            <i class="fas fa-calculator"></i> Calcular
+          </button>
+        </div>
+        <div class="sim-results">
+          <div class="sim-result-title"><i class="fas fa-file-invoice-dollar" style="margin-right:8px"></i>Resumo do Financiamento</div>
+          <div class="sim-result-item">
+            <span>Valor Financiado</span>
+            <span id="res-financiado">R$ —</span>
+          </div>
+          <div class="sim-result-item">
+            <span>Prazo</span>
+            <span id="res-prazo">— meses</span>
+          </div>
+          <div class="sim-result-item">
+            <span>Taxa Mensal</span>
+            <span id="res-taxa">—% a.m.</span>
+          </div>
+          <div class="sim-result-item">
+            <span>Total Pago</span>
+            <span id="res-total">R$ —</span>
+          </div>
+          <div class="sim-result-item">
+            <span>Total de Juros</span>
+            <span id="res-juros">R$ —</span>
+          </div>
+          <div class="sim-result-big">
+            <div class="label" style="margin-bottom:8px">Parcela Estimada</div>
+            <div class="value" id="res-parcela">R$ —</div>
+            <div class="label" style="margin-top:8px;font-size:9px">*valores aproximados. Consulte o corretor.</div>
+          </div>
+          <div style="margin-top:1rem">
+            <a href="https://wa.me/5575988844834?text=Olá+Thiago%2C+gostaria+de+um+atendimento+para+financiamento+imobiliário." target="_blank" class="btn-primary" style="width:100%;justify-content:center">
+              <i class="fab fa-whatsapp"></i> Falar com Especialista
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="depoimentos">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Depoimentos</div>
+      <h2 class="section-title">O que dizem nossos <em>Clientes</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"O Thiago foi incrível durante todo o processo de compra do meu apartamento. Muito profissional, atencioso e sempre disponível para tirar dúvidas. Recomendo demais!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AS</div>
+          <div>
+            <div class="testimonial-name">Ana Silva</div>
+            <div class="testimonial-city">Salvador, BA</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Excelente atendimento! Consegui vender minha casa rapidamente e com ótimo valor. Thiago conhece muito bem o mercado de Feira de Santana."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">RC</div>
+          <div>
+            <div class="testimonial-name">Roberto Castro</div>
+            <div class="testimonial-city">Feira de Santana, BA</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Encontrei o imóvel dos meus sonhos em Maceió graças ao Thiago. Processo seguro, transparente e sem surpresas. Com certeza voltarei a trabalhar com ele!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MO</div>
+          <div>
+            <div class="testimonial-name">Mariana Oliveira</div>
+            <div class="testimonial-city">Maceió, AL</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOTICIAS -->
+<section id="noticias" style="background:var(--black2);position:relative">
+  <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent)"></div>
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Mercado Imobiliário</div>
+      <h2 class="section-title">Últimas <em>Notícias</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="news-img">
+          <i class="fas fa-chart-line"></i>
+          <div class="news-cat">Mercado</div>
+        </div>
+        <div class="news-body">
+          <div class="news-date">15 de Janeiro, 2025</div>
+          <h3 class="news-title">Mercado imobiliário baiano cresce 18% em 2024</h3>
+          <p class="news-excerpt">Região Nordeste lidera crescimento no setor. Feira de Santana e Salvador registram aumento significativo na procura por imóveis residenciais.</p>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-img">
+          <i class="fas fa-percentage"></i>
+          <div class="news-cat">Financiamento</div>
+        </div>
+        <div class="news-body">
+          <div class="news-date">08 de Janeiro, 2025</div>
+          <h3 class="news-title">Taxa Selic e impacto no financiamento imobiliário</h3>
+          <p class="news-excerpt">Entenda como as variações da taxa básica de juros afetam diretamente as parcelas do seu financiamento e o que esperar para 2025.</p>
+        </div>
+      </div>
+      <div class="news-card">
+        <div class="news-img">
+          <i class="fas fa-home"></i>
+          <div class="news-cat">Dicas</div>
+        </div>
+        <div class="news-body">
+          <div class="news-date">02 de Janeiro, 2025</div>
+          <h3 class="news-title">10 dicas para comprar seu primeiro imóvel com segurança</h3>
+          <p class="news-excerpt">Especialista revela os cuidados essenciais na hora de adquirir um imóvel e como evitar armadilhas comuns no mercado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Dúvidas Frequentes</div>
+      <h2 class="section-title">Perguntas <em>Frequentes</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>Quais documentos são necessários para comprar um imóvel?</span>
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="faq-answer">Para compra à vista: RG, CPF, comprovante de renda e estado civil. Para financiamento, são necessários também extratos bancários, imposto de renda e certidões negativas. Orientamos cada cliente individualmente sobre toda documentação.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>Posso financiar 100% do valor do imóvel?</span>
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="faq-answer">Em geral, os bancos financiam até 80% do valor do imóvel. Porém, existem programas como o Casa Verde e Amarela que permitem condições especiais. Entre em contato para uma análise personalizada do seu caso.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>Quanto tempo leva o processo de compra?</span>
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="faq-answer">Para compra à vista, o processo pode ser concluído em 15 a 30 dias. Para financiamento, normalmente leva entre 30 e 90 dias, dependendo do banco e da análise de crédito.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>Qual é a comissão do corretor imobiliário?</span>
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="faq-answer">A comissão padrão do CRECI para vendas é de 6% sobre o valor do imóvel, paga pelo vendedor. Para locações, geralmente equivale a um mês de aluguel. Os valores são negociáveis conforme cada situação.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <span>Vocês atendem todo o Nordeste?</span>
+          <i class="fas fa-plus"></i>
+        </div>
+        <div class="faq-answer">Atendemos principalmente Feira de Santana, Salvador (BA) e Maceió (AL), com atendimento especializado e profundo conhecimento de cada mercado local.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" style="background:var(--black2);position:relative">
+  <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent)"></div>
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-label">Fale Conosco</div>
+      <h2 class="section-title">Entre em <em>Contato</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <div class="contact-item-label">WhatsApp</div>
+            <div class="contact-item-value">+55 75 98884-4834</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fab fa-instagram"></i></div>
+          <div>
+            <div class="contact-item-label">Instagram</div>
+            <div class="contact-item-value">@thiago_rodriguescorretor</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="contact-item-label">Cidades Atendidas</div>
+            <div class="contact-item-value">Feira de Santana • Salvador • Maceió</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <div class="contact-item-label">Horário de Atendimento</div>
+            <div class="contact-item-value">Seg–Sáb: 08h às 18h</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3 style="font-family:var(--font-display);font-size:1.4rem;margin-bottom:1.5rem;color:var(--gold)">Envie uma Mensagem</h3>
+        <div class="form-row">
+          <div class="form-field">
+            <label>Nome Completo</label>
+            <input type="text" id="c-name" placeholder="Seu nome">
+          </div>
+          <div class="form-field">
+            <label>Telefone</label>
+            <input type="tel" id="c-phone" placeholder="(00) 00000-0000">
+          </div>
+        </div>
+        <div class="form-field">
+          <label>E-mail</label>
+          <input type="email" id="c-email" placeholder="seu@email.com">
+        </div>
+        <div class="form-field">
+          <label>Assunto</label>
+          <select id="c-subject">
+            <option>Quero comprar um imóvel</option>
+            <option>Quero alugar um imóvel</option>
+            <option>Quero vender meu imóvel</option>
+            <option>Dúvidas sobre financiamento</option>
+            <option>Agendar visita</option>
+            <option>Outro assunto</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Mensagem</label>
+          <textarea id="c-message" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+        </div>
+        <button class="btn-primary" onclick="sendContact()" style="width:100%;justify-content:center;padding:14px">
+          <i class="fas fa-paper-plane"></i> Enviar Mensagem
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">Thiago Rodrigues</div>
+      <p class="footer-desc">Corretor imobiliário com mais de 10 anos de experiência. Especializado em imóveis residenciais e comerciais em Feira de Santana, Salvador e Maceió.</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/thiago_rodriguescorretor/" target="_blank" class="footer-social"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/5575988844834" target="_blank" class="footer-social"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="footer-social"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Imóveis</h4>
+      <ul>
+        <li><a href="#">Casas à Venda</a></li>
+        <li><a href="#">Casas para Alugar</a></li>
+        <li><a href="#">Apartamentos</a></li>
+        <li><a href="#">Coberturas</a></li>
+        <li><a href="#">Terrenos</a></li>
+        <li><a href="#">Comercial</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Cidades</h4>
+      <ul>
+        <li><a href="#">Feira de Santana</a></li>
+        <li><a href="#">Salvador</a></li>
+        <li><a href="#">Maceió</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Links Úteis</h4>
+      <ul>
+        <li><a href="#about">Sobre Thiago</a></li>
+        <li><a href="#financiamento">Simulador</a></li>
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#" onclick="openAuth('login')">Minha Conta</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Thiago Rodrigues Corretor Imobiliário. Todos os direitos reservados.</p>
+    <div class="footer-creci">CRECI/BA • Atendimento Ético e Profissional</div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/5575988844834?text=Olá+Thiago+Rodrigues%2C+visitei+seu+site+e+tenho+interesse+em+encontrar+um+imóvel.+Gostaria+de+receber+mais+informações+sobre+opções+de+casas%2C+apartamentos%2C+condomínios+ou+outros+imóveis+disponíveis.+Aguardo+seu+retorno%2C+obrigado(a)." target="_blank" class="float-whatsapp" title="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<div class="float-top" id="floatTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-chevron-up"></i>
+</div>
+
+<!-- CHAT ONLINE -->
+<div class="float-chat" id="floatChat">
+  <div class="float-chat-box" id="chatBox">
+    <div class="float-chat-header">
+      <div class="float-chat-avatar">TR</div>
+      <div>
+        <div class="float-chat-name">Thiago Rodrigues</div>
+        <div class="float-chat-status">Online agora</div>
+      </div>
+    </div>
+    <div class="float-chat-msgs" id="chatMsgs">
+      <div class="chat-msg agent">Olá! Seja bem-vindo(a). Como posso ajudá-lo(a) a encontrar o imóvel ideal? 😊</div>
+    </div>
+    <div class="float-chat-input">
+      <input type="text" id="chatInput" placeholder="Digite sua mensagem..." onkeypress="chatEnter(event)">
+      <button onclick="sendChat()"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+  <div class="float-chat-btn" onclick="toggleChat()">
+    <i class="fas fa-comment-dots" id="chatIcon"></i>
+  </div>
+</div>
+
+<!-- COMPARE BAR -->
+<div class="compare-bar" id="compareBar">
+  <div style="font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray);white-space:nowrap">Comparar:</div>
+  <div class="compare-items" id="compareItems"></div>
+  <button class="btn-compare-now" onclick="compareNow()">Comparar Agora</button>
+  <button onclick="clearCompare()" style="background:none;border:none;color:var(--gray);cursor:pointer;font-size:16px"><i class="fas fa-times"></i></button>
+</div>
+
+<!-- NOTIFICATION -->
+<div class="notification" id="notification">
+  <i class="fas fa-check-circle"></i>
+  <span id="notif-text">Operação realizada com sucesso</span>
+</div>
+
+<!-- PROPERTY DETAIL MODAL -->
+<div class="modal-overlay" id="propModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closePropModal()"><i class="fas fa-times"></i></button>
+    <div class="modal-gallery">
+      <i class="fas fa-camera"></i>
+      <div class="modal-gallery-label">Galeria de Fotos — Adicionar imagens no painel admin</div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-header">
+        <div>
+          <h2 class="modal-title" id="modal-title">Nome do Imóvel</h2>
+          <div class="modal-location" id="modal-location"><i class="fas fa-map-marker-alt"></i> Cidade</div>
+        </div>
+        <div style="text-align:right">
+          <div class="modal-price" id="modal-price">R$ 0</div>
+          <div style="font-size:10px;color:var(--gray);margin-top:4px" id="modal-type">Tipo</div>
+        </div>
+      </div>
+      <div class="modal-specs">
+        <div class="modal-spec">
+          <div class="modal-spec-icon"><i class="fas fa-bed"></i></div>
+          <div class="modal-spec-val" id="modal-rooms">—</div>
+          <div class="modal-spec-lbl">Quartos</div>
+        </div>
+        <div class="modal-spec">
+          <div class="modal-spec-icon"><i class="fas fa-bath"></i></div>
+          <div class="modal-spec-val" id="modal-baths">—</div>
+          <div class="modal-spec-lbl">Banheiros</div>
+        </div>
+        <div class="modal-spec">
+          <div class="modal-spec-icon"><i class="fas fa-car"></i></div>
+          <div class="modal-spec-val" id="modal-garage">—</div>
+          <div class="modal-spec-lbl">Garagem</div>
+        </div>
+        <div class="modal-spec">
+          <div class="modal-spec-icon"><i class="fas fa-ruler-combined"></i></div>
+          <div class="modal-spec-val" id="modal-area">—</div>
+          <div class="modal-spec-lbl">Área Total</div>
+        </div>
+      </div>
+      <div class="modal-tabs">
+        <button class="modal-tab active" onclick="setModalTab(this,'desc')">Descrição</button>
+        <button class="modal-tab" onclick="setModalTab(this,'features')">Diferenciais</button>
+        <button class="modal-tab" onclick="setModalTab(this,'location')">Localização</button>
+        <button class="modal-tab" onclick="setModalTab(this,'finance')">Financiar</button>
+        <button class="modal-tab" onclick="setModalTab(this,'similar')">Similares</button>
+      </div>
+      <div class="modal-tab-content active" id="tab-desc">
+        <p id="modal-desc" style="font-size:13px;color:var(--gray);line-height:1.9">A descrição completa deste imóvel será adicionada pelo administrador. Clique em &quot;Entrar em Contato&quot; para mais informações.</p>
+        <div class="prop-tags" id="modal-tags"></div>
+      </div>
+      <div class="modal-tab-content" id="tab-features">
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;font-size:12px;color:var(--gray2)" id="modal-features">
+          <div><i class="fas fa-check" style="color:var(--gold);margin-right:6px"></i>A ser definido pelo admin</div>
+        </div>
+      </div>
+      <div class="modal-tab-content" id="tab-location">
+        <div class="prop-map"><i class="fas fa-map-marker-alt" style="color:var(--gold);font-size:24px;margin-right:8px"></i>Mapa interativo — integração com Google Maps</div>
+        <p style="font-size:12px;color:var(--gray)">Localização e proximidades serão exibidas aqui.</p>
+      </div>
+      <div class="modal-tab-content" id="tab-finance">
+        <div style="padding:1rem;background:var(--black3);border-radius:4px">
+          <p style="font-size:13px;color:var(--gray);margin-bottom:1rem">Simulação rápida para este imóvel:</p>
+          <div class="form-field"><label>Entrada</label><input type="text" id="mf-entrada" placeholder="R$ 0" oninput="calcModalFinancing()"></div>
+          <div class="form-field"><label>Prazo</label>
+            <select id="mf-prazo" onchange="calcModalFinancing()">
+              <option value="120">120 meses (10 anos)</option>
+              <option value="180">180 meses (15 anos)</option>
+              <option value="240" selected>240 meses (20 anos)</option>
+              <option value="360">360 meses (30 anos)</option>
+            </select>
+          </div>
+          <div id="mf-result" style="background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);padding:1rem;border-radius:4px;display:none;margin-top:1rem">
+            <div style="text-align:center">
+              <div style="font-size:10px;color:var(--gray);letter-spacing:2px;text-transform:uppercase">Parcela Estimada</div>
+              <div style="font-family:var(--font-display);font-size:2rem;color:var(--gold);font-weight:700;margin-top:4px" id="mf-parcela">R$ 0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-tab-content" id="tab-similar">
+        <div class="prop-similar">
+          <p style="font-size:12px;color:var(--gray);margin-bottom:1rem">Imóveis semelhantes que podem te interessar:</p>
+          <div class="similar-grid" id="modal-similar-grid"></div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <a href="https://wa.me/5575988844834" target="_blank" class="btn-primary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <button class="btn-secondary" onclick="scheduleVisit()"><i class="fas fa-calendar"></i> Agendar Visita</button>
+        <button class="btn-secondary" onclick="shareProperty()"><i class="fas fa-share-alt"></i> Compartilhar</button>
+        <button class="btn-secondary" onclick="toggleCompare(currentPropId)" id="compareBtn"><i class="fas fa-balance-scale"></i> Comparar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AUTH MODAL -->
+<div class="modal-overlay" id="authModal">
+  <div class="modal auth-modal" style="padding:2.5rem">
+    <button class="modal-close" onclick="closeAuth()"><i class="fas fa-times"></i></button>
+    <div style="text-align:center;margin-bottom:1.5rem">
+      <div style="font-family:var(--font-display);font-size:1.8rem;color:var(--gold)">Thiago Rodrigues</div>
+      <div style="font-size:10px;letter-spacing:2px;color:var(--gray);margin-top:4px">CORRETOR IMOBILIÁRIO</div>
+    </div>
+    <div class="auth-tabs">
+      <div class="auth-tab active" id="authTabLogin" onclick="switchAuthTab('login')">Entrar</div>
+      <div class="auth-tab" id="authTabRegister" onclick="switchAuthTab('register')">Cadastrar</div>
+    </div>
+    <div id="loginForm">
+      <div class="form-field">
+        <label>E-mail</label>
+        <input type="email" id="login-email" placeholder="seu@email.com">
+      </div>
+      <div class="form-field">
+        <label>Senha</label>
+        <input type="password" id="login-pass" placeholder="••••••••">
+      </div>
+      <div style="text-align:right;margin-bottom:1.5rem">
+        <a href="#" style="font-size:11px;color:var(--gold);text-decoration:none" onclick="forgotPassword()">Esqueci minha senha</a>
+      </div>
+      <button class="btn-primary" onclick="doLogin()" style="width:100%;justify-content:center;padding:14px">Entrar</button>
+    </div>
+    <div id="registerForm" style="display:none">
+      <div class="form-field">
+        <label>Nome Completo</label>
+        <input type="text" id="reg-name" placeholder="Seu nome">
+      </div>
+      <div class="form-field">
+        <label>E-mail</label>
+        <input type="email" id="reg-email" placeholder="seu@email.com">
+      </div>
+      <div class="form-field">
+        <label>Telefone</label>
+        <input type="tel" id="reg-phone" placeholder="(00) 00000-0000">
+      </div>
+      <div class="form-field">
+        <label>Senha</label>
+        <input type="password" id="reg-pass" placeholder="Mínimo 8 caracteres">
+      </div>
+      <div class="form-field">
+        <label>Confirmar Senha</label>
+        <input type="password" id="reg-pass2" placeholder="Repita a senha">
+      </div>
+      <button class="btn-primary" onclick="doRegister()" style="width:100%;justify-content:center;padding:14px;margin-top:0.5rem">Criar Conta</button>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN MODAL -->
+<div class="modal-overlay" id="adminModal">
+  <div class="modal admin-modal">
+    <button class="modal-close" onclick="closeAdmin()"><i class="fas fa-times"></i></button>
+    <div style="padding:1.5rem 2rem;border-bottom:1px solid var(--glass-border);display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <h2 style="font-family:var(--font-display);font-size:1.4rem;color:var(--gold)">Painel Administrativo</h2>
+        <div style="font-size:10px;color:var(--gray);letter-spacing:1px">Thiago Rodrigues — Acesso Exclusivo</div>
+      </div>
+      <div style="font-size:10px;color:var(--gray)" id="admin-user-info"></div>
+    </div>
+    <div class="admin-flex">
+      <div class="admin-sidebar">
+        <a onclick="adminSection('dashboard')" class="active" id="adm-nav-dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a onclick="adminSection('imoveis')" id="adm-nav-imoveis"><i class="fas fa-building"></i> Imóveis</a>
+        <a onclick="adminSection('add')" id="adm-nav-add"><i class="fas fa-plus-circle"></i> Adicionar</a>
+        <a onclick="adminSection('mensagens')" id="adm-nav-mensagens"><i class="fas fa-envelope"></i> Mensagens</a>
+        <a onclick="adminSection('usuarios')" id="adm-nav-usuarios"><i class="fas fa-users"></i> Usuários</a>
+        <a onclick="adminSection('favoritos')" id="adm-nav-favoritos"><i class="fas fa-heart"></i> Favoritos</a>
+        <a onclick="adminSection('relatorios')" id="adm-nav-relatorios"><i class="fas fa-chart-bar"></i> Relatórios</a>
+      </div>
+      <div class="admin-content" id="adminContent"></div>
+    </div>
+  </div>
+</div>
+
+<!-- SCHEDULE MODAL -->
+<div class="modal-overlay" id="scheduleModal">
+  <div class="modal" style="max-width:460px;padding:2.5rem">
+    <button class="modal-close" onclick="document.getElementById('scheduleModal').classList.remove('open')"><i class="fas fa-times"></i></button>
+    <h3 style="font-family:var(--font-display);font-size:1.4rem;color:var(--gold);margin-bottom:1.5rem"><i class="fas fa-calendar-alt" style="margin-right:8px"></i>Agendar Visita</h3>
+    <div class="form-field"><label>Seu Nome</label><input type="text" id="sch-name" placeholder="Nome completo"></div>
+    <div class="form-field"><label>Telefone</label><input type="tel" id="sch-phone" placeholder="(00) 00000-0000"></div>
+    <div class="form-field"><label>Data Preferida</label><input type="date" id="sch-date"></div>
+    <div class="form-field"><label>Horário</label>
+      <select id="sch-time">
+        <option>08:00</option><option>09:00</option><option>10:00</option><option>11:00</option>
+        <option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option>
+      </select>
+    </div>
+    <button class="btn-primary" onclick="confirmSchedule()" style="width:100%;justify-content:center;padding:14px">Confirmar Agendamento</button>
+  </div>
+</div>
+
+<script>
+// ── DATA ──
+const ADMIN_EMAIL = 'pedro3brawler@gmail.com';
+let db = {
+  users: JSON.parse(localStorage.getItem('tr_users') || '[]'),
+  properties: JSON.parse(localStorage.getItem('tr_properties') || '[]'),
+  messages: JSON.parse(localStorage.getItem('tr_messages') || '[]'),
+  favorites: JSON.parse(localStorage.getItem('tr_favorites') || '[]'),
+  visits: JSON.parse(localStorage.getItem('tr_visits') || '[]')
+};
+let currentUser = JSON.parse(localStorage.getItem('tr_current') || 'null');
+let currentPropId = null;
+let compareList = [];
+let allProperties = [];
+let displayedCount = 0;
+const PAGE_SIZE = 6;
+
+// ── DEFAULT PROPERTIES ──
+const defaultProperties = [
+  {id:'p1',name:'Casa Moderna em Condomínio',type:'Casa',category:'venda',city:'Feira de Santana',neighborhood:'SIM',price:'R$ 850.000',rooms:4,baths:3,garage:2,area:'280m²',badge:'sale',badgeLabel:'À Venda',desc:'',features:['Piscina','Churrasqueira','Área Gourmet','Segurança 24h','Jardim'],favorite:false},
+  {id:'p2',name:'Apartamento Alto Padrão',type:'Apartamento',category:'luxo',city:'Salvador',neighborhood:'Barra',price:'R$ 1.200.000',rooms:3,baths:2,garage:2,area:'145m²',badge:'sale',badgeLabel:'Luxo',desc:'',features:['Vista Mar','Varanda Gourmet','Academia','Piscina'],favorite:false},
+  {id:'p3',name:'Cobertura Duplex Exclusiva',type:'Cobertura',category:'cobertura',city:'Maceió',neighborhood:'Ponta Verde',price:'R$ 2.500.000',rooms:5,baths:4,garage:3,area:'420m²',badge:'sale',badgeLabel:'À Venda',desc:'',features:['Vista 360°','Piscina Privativa','Terraço','Adega'],favorite:false},
+  {id:'p4',name:'Casa em Condomínio Fechado',type:'Casa',category:'condominio',city:'Feira de Santana',neighborhood:'Muchila',price:'R$ 480.000',rooms:3,baths:2,garage:1,area:'180m²',badge:'new',badgeLabel:'Novo',desc:'',features:['Área de Lazer','Playground','Segurança'],favorite:false},
+  {id:'p5',name:'Apartamento para Alugar',type:'Apartamento',category:'aluguel',city:'Salvador',neighborhood:'Pituba',price:'R$ 3.200/mês',rooms:2,baths:1,garage:1,area:'75m²',badge:'rent',badgeLabel:'Aluguel',desc:'',features:['Mobiliado','Ar-Condicionado','Academia'],favorite:false},
+  {id:'p6',name:'Terreno Residencial Premium',type:'Terreno',category:'terreno',city:'Feira de Santana',neighborhood:'Capuchinhos',price:'R$ 320.000',rooms:0,baths:0,garage:0,area:'600m²',badge:'sale',badgeLabel:'À Venda',desc:'',features:['Documentação OK','Localização Privilegiada'],favorite:false},
+  {id:'p7',name:'Sala Comercial Centro',type:'Sala Comercial',category:'comercial',city:'Feira de Santana',neighborhood:'Centro',price:'R$ 2.800/mês',rooms:0,baths:1,garage:0,area:'45m²',badge:'rent',badgeLabel:'Comercial',desc:'',features:['Recepção','Ar-Condicionado','Segurança'],favorite:false},
+  {id:'p8',name:'Casa Popular Financiável',type:'Casa',category:'oportunidade',city:'Feira de Santana',neighborhood:'Santo Antônio dos Prazeres',price:'R$ 180.000',rooms:2,baths:1,garage:0,area:'80m²',badge:'hot',badgeLabel:'Oportunidade',desc:'',features:['Aceita Financiamento','FGTS','Minha Casa Minha Vida'],favorite:false},
+  {id:'p9',name:'Kitnet Mobiliada',type:'Kitnet',category:'aluguel',city:'Maceió',neighborhood:'Pajuçara',price:'R$ 1.500/mês',rooms:1,baths:1,garage:0,area:'32m²',badge:'rent',badgeLabel:'Aluguel',desc:'',features:['Totalmente Mobiliada','Wi-Fi','Prox. Praia'],favorite:false},
+  {id:'p10',name:'Casa de Luxo Condomínio',type:'Casa de Luxo',category:'destaque',city:'Salvador',neighborhood:'Alphaville',price:'R$ 3.800.000',rooms:6,baths:5,garage:4,area:'650m²',badge:'sale',badgeLabel:'Destaque',desc:'',features:['Piscina Aquecida','Cinema','Adega','Gerador'],favorite:false},
+  {id:'p11',name:'Duplex Moderno',type:'Duplex',category:'novo',city:'Feira de Santana',neighborhood:'Mangabeira',price:'R$ 420.000',rooms:3,baths:2,garage:1,area:'160m²',badge:'new',badgeLabel:'Novo',desc:'',features:['Terraço','Área Gourmet','Pet Friendly'],favorite:false},
+  {id:'p12',name:'Fazenda com Casa Sede',type:'Fazenda',category:'todos',city:'Feira de Santana',neighborhood:'Zona Rural',price:'R$ 4.500.000',rooms:4,baths:3,garage:5,area:'50 hectares',badge:'sale',badgeLabel:'Rural',desc:'',features:['Casa Sede','Pasto','Rio','Açude'],favorite:false},
+];
+
+function initDB() {
+  if (db.properties.length === 0) {
+    db.properties = [...defaultProperties];
+    saveDB();
+  }
+  allProperties = [...db.properties];
+  // Sync favorites from current user
+  if (currentUser) {
+    const favs = db.favorites.filter(f=>f.userId===currentUser.email).map(f=>f.propId);
+    allProperties.forEach(p=>{ p.favorite = favs.includes(p.id); });
+  }
+}
+function saveDB() {
+  localStorage.setItem('tr_users', JSON.stringify(db.users));
+  localStorage.setItem('tr_properties', JSON.stringify(db.properties));
+  localStorage.setItem('tr_messages', JSON.stringify(db.messages));
+  localStorage.setItem('tr_favorites', JSON.stringify(db.favorites));
+  localStorage.setItem('tr_visits', JSON.stringify(db.visits));
+}
+
+// ── NAV ──
+window.addEventListener('scroll',()=>{
+  const nav = document.getElementById('navbar');
+  nav.classList.toggle('scrolled', window.scrollY > 80);
+  document.getElementById('floatTop').classList.toggle('visible', window.scrollY > 400);
+});
+function toggleMobileMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+
+// ── THEME ──
+function toggleTheme(){
+  const html = document.documentElement;
+  const isDark = html.getAttribute('data-theme')==='dark';
+  html.setAttribute('data-theme', isDark?'light':'dark');
+  document.getElementById('theme-icon').className = isDark?'fas fa-sun':'fas fa-moon';
+}
+
+// ── SEARCH ──
+function setSearchTab(btn,val){
+  document.querySelectorAll('.search-tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+}
+function runSearch(){
+  const type = document.getElementById('s-type').value;
+  const city = document.getElementById('s-city').value;
+  const neighborhood = document.getElementById('s-neighborhood').value.toLowerCase();
+  const rooms = document.getElementById('s-rooms').value;
+  let results = allProperties.filter(p=>{
+    if(type && !p.type.toLowerCase().includes(type.toLowerCase())) return false;
+    if(city && p.city !== city) return false;
+    if(neighborhood && !p.neighborhood.toLowerCase().includes(neighborhood)) return false;
+    return true;
+  });
+  renderProperties(results);
+  document.getElementById('catalogo').scrollIntoView({behavior:'smooth'});
+  showNotif(`${results.length} imóvel(is) encontrado(s)`,'success');
+}
+
+// ── CATALOG ──
+document.getElementById('catalogTabs').addEventListener('click',e=>{
+  const tab = e.target.closest('.catalog-tab');
+  if(!tab) return;
+  document.querySelectorAll('.catalog-tab').forEach(t=>t.classList.remove('active'));
+  tab.classList.add('active');
+  const filter = tab.dataset.tab;
+  filterAndRender(filter);
+});
+function filterAndRender(filter){
+  let props = filter==='todos'||!filter ? allProperties : allProperties.filter(p=>p.category===filter);
+  if(filter==='favorito') props = allProperties.filter(p=>p.favorite);
+  displayedCount = 0;
+  renderProperties(props.slice(0,PAGE_SIZE));
+  window._filteredProps = props;
+  document.getElementById('loadMoreBtn').style.display = props.length > PAGE_SIZE ? 'inline-flex':'none';
+}
+function loadMoreProperties(){
+  displayedCount += PAGE_SIZE;
+  const props = window._filteredProps || allProperties;
+  const next = props.slice(displayedCount, displayedCount+PAGE_SIZE);
+  if(next.length === 0){showNotif('Todos os imóveis já foram exibidos','info');return;}
+  next.forEach(p=> document.getElementById('propertiesGrid').appendChild(createCard(p)));
+  if(displayedCount+PAGE_SIZE >= props.length) document.getElementById('loadMoreBtn').style.display='none';
+}
+function renderProperties(props){
+  const grid = document.getElementById('propertiesGrid');
+  grid.innerHTML='';
+  if(props.length===0){
+    grid.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:4rem;color:var(--gray)"><i class="fas fa-search" style="font-size:3rem;display:block;margin-bottom:1rem;color:var(--gold-dark)"></i>Nenhum imóvel encontrado com os filtros selecionados.</div>';
+    return;
+  }
+  props.forEach(p=>grid.appendChild(createCard(p)));
+  window._filteredProps = props;
+}
+function createCard(p){
+  const div = document.createElement('div');
+  div.className = 'property-card';
+  div.innerHTML = `
+    <div class="property-img">
+      <div class="property-img-placeholder">
+        <i class="fas fa-${p.type==='Terreno'||p.type==='Fazenda'?'mountain':'building'}"></i>
+        <span>Foto em breve</span>
+      </div>
+      <span class="property-badge badge-${p.badge}">${p.badgeLabel}</span>
+      <button class="property-fav${p.favorite?' active':''}" onclick="toggleFav('${p.id}',this)" title="${p.favorite?'Remover favorito':'Favoritar'}">
+        <i class="fa${p.favorite?'s':'r'} fa-heart"></i>
+      </button>
+    </div>
+    <div class="property-body">
+      <div class="property-type">${p.type}</div>
+      <div class="property-name">${p.name}</div>
+      <div class="property-city"><i class="fas fa-map-marker-alt"></i>${p.city} • ${p.neighborhood}</div>
+      <div class="property-features">
+        ${p.rooms>0?`<div class="property-feature"><i class="fas fa-bed"></i>${p.rooms} Qts</div>`:''}
+        ${p.baths>0?`<div class="property-feature"><i class="fas fa-bath"></i>${p.baths} Ban</div>`:''}
+        ${p.garage>0?`<div class="property-feature"><i class="fas fa-car"></i>${p.garage} Gar</div>`:''}
+        <div class="property-feature"><i class="fas fa-ruler-combined"></i>${p.area}</div>
+      </div>
+      <div class="property-footer">
+        <div class="property-price"><small>${p.category==='aluguel'?'Aluguel por':'Valor'}</small>${p.price}</div>
+        <button class="btn-detail" onclick="openProp('${p.id}')">Ver Detalhes</button>
+      </div>
+    </div>
+  `;
+  return div;
+}
+function setCatalogTab(type){
+  document.querySelectorAll('.catalog-tab').forEach(t=>{
+    if(t.dataset.tab===type){t.click();}
+  });
+}
+
+// ── FAVORITES ──
+function toggleFav(id,btn){
+  if(!currentUser){openAuth('login');showNotif('Faça login para favoritar imóveis','info');return;}
+  const prop = allProperties.find(p=>p.id===id);
+  if(!prop) return;
+  prop.favorite = !prop.favorite;
+  const favIdx = db.favorites.findIndex(f=>f.userId===currentUser.email && f.propId===id);
+  if(prop.favorite && favIdx===-1) db.favorites.push({userId:currentUser.email,propId:id,date:new Date().toISOString()});
+  else if(!prop.favorite && favIdx>-1) db.favorites.splice(favIdx,1);
+  saveDB();
+  btn.classList.toggle('active',prop.favorite);
+  btn.innerHTML = `<i class="fa${prop.favorite?'s':'r'} fa-heart"></i>`;
+  showNotif(prop.favorite?'Adicionado aos favoritos!':'Removido dos favoritos','success');
+}
+
+// ── PROPERTY MODAL ──
+function openProp(id){
+  const p = allProperties.find(x=>x.id===id);
+  if(!p) return;
+  currentPropId = id;
+  document.getElementById('modal-title').textContent = p.name;
+  document.getElementById('modal-location').innerHTML = `<i class="fas fa-map-marker-alt"></i>${p.city} • ${p.neighborhood}`;
+  document.getElementById('modal-price').textContent = p.price;
+  document.getElementById('modal-type').textContent = p.type+' | '+p.badgeLabel;
+  document.getElementById('modal-rooms').textContent = p.rooms||'—';
+  document.getElementById('modal-baths').textContent = p.baths||'—';
+  document.getElementById('modal-garage').textContent = p.garage||'—';
+  document.getElementById('modal-area').textContent = p.area;
+  document.getElementById('modal-desc').textContent = p.desc||'A descrição completa deste imóvel será adicionada em breve. Entre em contato para mais informações.';
+  // Features
+  document.getElementById('modal-features').innerHTML = (p.features||[]).map(f=>`<div><i class="fas fa-check" style="color:var(--gold);margin-right:6px"></i>${f}</div>`).join('');
+  // Tags
+  document.getElementById('modal-tags').innerHTML = [p.type,p.city,p.neighborhood].filter(Boolean).map(t=>`<span class="prop-tag">${t}</span>`).join('');
+  // Similar
+  const similar = allProperties.filter(x=>x.id!==id&&x.city===p.city).slice(0,3);
+  document.getElementById('modal-similar-grid').innerHTML = similar.map(s=>`<div class="similar-card" onclick="openProp('${s.id}')"><div class="similar-price">${s.price}</div><div class="similar-name">${s.name}</div><div style="font-size:10px;color:var(--gray);margin-top:2px">${s.city}</div></div>`).join('');
+  // Financing pre-fill
+  document.getElementById('mf-entrada').value='';
+  document.getElementById('mf-result').style.display='none';
+  // Set modal tab to desc
+  setModalTab(document.querySelector('.modal-tab'),'desc');
+  document.getElementById('propModal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closePropModal(){
+  document.getElementById('propModal').classList.remove('open');
+  document.body.style.overflow='';
+}
+function setModalTab(btn,id){
+  document.querySelectorAll('.modal-tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.modal-tab-content').forEach(c=>c.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  document.getElementById('tab-'+id).classList.add('active');
+}
+
+// ── MODAL FINANCING ──
+function calcModalFinancing(){
+  const p = allProperties.find(x=>x.id===currentPropId);
+  if(!p) return;
+  const rawPrice = parseFloat(p.price.replace(/[^\d]/g,''));
+  const rawEntrada = parseFloat(document.getElementById('mf-entrada').value.replace(/[^\d]/g,''))||0;
+  const financiado = rawPrice - rawEntrada;
+  const meses = parseInt(document.getElementById('mf-prazo').value);
+  if(financiado<=0||meses<=0){document.getElementById('mf-result').style.display='none';return;}
+  const taxa = 0.09/12;
+  const parcela = financiado * (taxa * Math.pow(1+taxa,meses)) / (Math.pow(1+taxa,meses)-1);
+  document.getElementById('mf-parcela').textContent = 'R$ '+parcela.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+  document.getElementById('mf-result').style.display='block';
+}
+
+// ── COMPARE ──
+function toggleCompare(id){
+  if(!id) return;
+  const p = allProperties.find(x=>x.id===id);
+  if(!p) return;
+  const idx = compareList.indexOf(id);
+  if(idx>-1){compareList.splice(idx,1);}
+  else{if(compareList.length>=3){showNotif('Máximo 3 imóveis para comparar','info');return;}compareList.push(id);}
+  updateCompareBar();
+}
+function updateCompareBar(){
+  const bar = document.getElementById('compareBar');
+  bar.classList.toggle('visible',compareList.length>0);
+  document.getElementById('compareItems').innerHTML = compareList.map(id=>{
+    const p=allProperties.find(x=>x.id===id);
+    return `<div class="compare-item">${p.name}<span class="compare-item-close" onclick="removeCompare('${id}')">×</span></div>`;
+  }).join('');
+}
+function removeCompare(id){compareList=compareList.filter(x=>x!==id);updateCompareBar();}
+function clearCompare(){compareList=[];updateCompareBar();}
+function compareNow(){
+  if(compareList.length<2){showNotif('Selecione pelo menos 2 imóveis para comparar','info');return;}
+  const props = compareList.map(id=>allProperties.find(x=>x.id===id));
+  let html=`<div style="display:grid;grid-template-columns:repeat(${props.length},1fr);gap:1rem">`;
+  props.forEach(p=>{
+    html+=`<div style="background:var(--black3);border:1px solid var(--glass-border);padding:1rem;border-radius:4px">
+      <div style="font-family:var(--font-display);font-size:1rem;color:var(--gold);margin-bottom:0.5rem">${p.name}</div>
+      <div style="font-size:2rem;font-family:var(--font-display);margin-bottom:0.5rem">${p.price}</div>
+      <div style="font-size:11px;color:var(--gray);line-height:2">
+        <div>📍 ${p.city}</div>
+        <div>🏠 ${p.type}</div>
+        ${p.rooms>0?`<div>🛏 ${p.rooms} Quartos</div>`:''}
+        ${p.baths>0?`<div>🚿 ${p.baths} Banheiros</div>`:''}
+        ${p.garage>0?`<div>🚗 ${p.garage} Vagas</div>`:''}
+        <div>📐 ${p.area}</div>
+      </div>
+    </div>`;
+  });
+  html+='</div>';
+  showModal('Comparar Imóveis',html);
+}
+
+// ── FINANCING ──
+function updatePrazo(){
+  const v = document.getElementById('sim-prazo').value;
+  document.getElementById('prazo-display').textContent = `${v} meses (${Math.round(v/12)} anos)`;
+}
+function updateJuros(){
+  const v = document.getElementById('sim-juros').value;
+  document.getElementById('juros-display').textContent = `${parseFloat(v).toFixed(1)}% ao ano`;
+}
+function parseBR(str){return parseFloat((str||'').replace(/\./g,'').replace(',','.'))||0;}
+function fmtBR(n){return n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function calcFinancing(){
+  const valor = parseBR(document.getElementById('sim-valor').value) || parseFloat(document.getElementById('sim-valor').value.replace(/[^\d]/g,''));
+  const entrada = parseBR(document.getElementById('sim-entrada').value) || parseFloat(document.getElementById('sim-entrada').value.replace(/[^\d]/g,''))||0;
+  const meses = parseInt(document.getElementById('sim-prazo').value)||240;
+  const juroAno = parseFloat(document.getElementById('sim-juros').value)||9;
+  if(!valor||valor<=0){return;}
+  const financiado = valor - entrada;
+  if(financiado<=0){showNotif('Entrada deve ser menor que o valor do imóvel','info');return;}
+  const taxaMensal = juroAno / 100 / 12;
+  const parcela = financiado * (taxaMensal * Math.pow(1+taxaMensal,meses)) / (Math.pow(1+taxaMensal,meses)-1);
+  const total = parcela * meses;
+  const juros = total - financiado;
+  document.getElementById('res-financiado').textContent = 'R$ '+fmtBR(financiado);
+  document.getElementById('res-prazo').textContent = meses+' meses';
+  document.getElementById('res-taxa').textContent = (juroAno/12).toFixed(4)+'% a.m.';
+  document.getElementById('res-total').textContent = 'R$ '+fmtBR(total);
+  document.getElementById('res-juros').textContent = 'R$ '+fmtBR(juros);
+  document.getElementById('res-parcela').textContent = 'R$ '+fmtBR(parcela);
+}
+
+// ── FAQ ──
+function toggleFaq(btn){btn.parentElement.classList.toggle('open')}
+
+// ── CHAT ──
+function toggleChat(){
+  const box = document.getElementById('chatBox');
+  const icon = document.getElementById('chatIcon');
+  box.classList.toggle('open');
+  icon.className = box.classList.contains('open')?'fas fa-times':'fas fa-comment-dots';
+}
+function chatEnter(e){if(e.key==='Enter')sendChat();}
+function sendChat(){
+  const inp = document.getElementById('chatInput');
+  const msg = inp.value.trim();
+  if(!msg) return;
+  const msgs = document.getElementById('chatMsgs');
+  msgs.innerHTML += `<div class="chat-msg user">${msg}</div>`;
+  inp.value='';
+  msgs.scrollTop = msgs.scrollHeight;
+  setTimeout(()=>{
+    msgs.innerHTML += `<div class="chat-msg agent">Obrigado pela mensagem! Para um atendimento imediato, clique no botão do WhatsApp. 😊</div>`;
+    msgs.scrollTop = msgs.scrollHeight;
+  },1200);
+}
+
+// ── CONTACT ──
+function sendContact(){
+  const name = document.getElementById('c-name').value.trim();
+  const phone = document.getElementById('c-phone').value.trim();
+  const email = document.getElementById('c-email').value.trim();
+  const subject = document.getElementById('c-subject').value;
+  const message = document.getElementById('c-message').value.trim();
+  if(!name||!phone||!message){showNotif('Preencha os campos obrigatórios','info');return;}
+  // Anti-spam: simple validation
+  if(message.length<10){showNotif('Mensagem muito curta','info');return;}
+  db.messages.push({id:'m'+(Date.now()),name,phone,email,subject,message,date:new Date().toISOString(),read:false});
+  saveDB();
+  document.getElementById('c-name').value='';
+  document.getElementById('c-phone').value='';
+  document.getElementById('c-email').value='';
+  document.getElementById('c-message').value='';
+  showNotif('Mensagem enviada com sucesso! Thiago entrará em contato em breve.','success');
+}
+
+// ── AUTH ──
+function openAuth(tab){
+  document.getElementById('authModal').classList.add('open');
+  document.body.style.overflow='hidden';
+  switchAuthTab(tab||'login');
+}
+function closeAuth(){
+  document.getElementById('authModal').classList.remove('open');
+  document.body.style.overflow='';
+}
+function switchAuthTab(tab){
+  document.getElementById('authTabLogin').classList.toggle('active',tab==='login');
+  document.getElementById('authTabRegister').classList.toggle('active',tab==='register');
+  document.getElementById('loginForm').style.display=tab==='login'?'block':'none';
+  document.getElementById('registerForm').style.display=tab==='register'?'block':'none';
+}
+function doLogin(){
+  const email = document.getElementById('login-email').value.trim();
+  const pass = document.getElementById('login-pass').value;
+  if(!email||!pass){showNotif('Preencha e-mail e senha','info');return;}
+  // Simple validation
+  if(!/\S+@\S+\.\S+/.test(email)){showNotif('E-mail inválido','info');return;}
+  const user = db.users.find(u=>u.email===email);
+  if(!user){showNotif('Usuário não encontrado','info');return;}
+  if(user.password!==btoa(pass)){showNotif('Senha incorreta','info');return;}
+  currentUser = user;
+  localStorage.setItem('tr_current',JSON.stringify(user));
+  closeAuth();
+  updateNavUser();
+  // Sync favorites
+  const favs = db.favorites.filter(f=>f.userId===email).map(f=>f.propId);
+  allProperties.forEach(p=>{p.favorite=favs.includes(p.id);});
+  filterAndRender('todos');
+  showNotif(`Bem-vindo(a), ${user.name}!`,'success');
+  if(email===ADMIN_EMAIL) setTimeout(()=>showNotif('Acesso administrativo ativado','success'),1500);
+}
+function doRegister(){
+  const name = document.getElementById('reg-name').value.trim();
+  const email = document.getElementById('reg-email').value.trim();
+  const phone = document.getElementById('reg-phone').value.trim();
+  const pass = document.getElementById('reg-pass').value;
+  const pass2 = document.getElementById('reg-pass2').value;
+  if(!name||!email||!phone||!pass){showNotif('Preencha todos os campos','info');return;}
+  if(!/\S+@\S+\.\S+/.test(email)){showNotif('E-mail inválido','info');return;}
+  if(pass.length<8){showNotif('Senha deve ter mínimo 8 caracteres','info');return;}
+  if(pass!==pass2){showNotif('Senhas não coincidem','info');return;}
+  if(db.users.find(u=>u.email===email)){showNotif('E-mail já cadastrado','info');return;}
+  const user={id:'u'+Date.now(),name,email,phone,password:btoa(pass),date:new Date().toISOString(),isAdmin:email===ADMIN_EMAIL};
+  db.users.push(user);
+  saveDB();
+  currentUser=user;
+  localStorage.setItem('tr_current',JSON.stringify(user));
+  closeAuth();
+  updateNavUser();
+  showNotif('Conta criada com sucesso! Bem-vindo(a)!','success');
+}
+function forgotPassword(){showNotif('Entre em contato via WhatsApp para recuperar sua senha.','info');}
+function updateNavUser(){
+  const actions = document.querySelector('.nav-actions');
+  if(currentUser){
+    actions.innerHTML=`
+      <button class="btn-theme" onclick="toggleTheme()" title="Alternar tema"><i class="fas fa-moon" id="theme-icon"></i></button>
+      <span style="font-size:12px;color:var(--gold)"><i class="fas fa-user-circle"></i> ${currentUser.name.split(' ')[0]}</span>
+      ${currentUser.email===ADMIN_EMAIL?`<button class="btn-nav" onclick="showAdmin()">Admin</button>`:''}
+      <button class="btn-nav" onclick="doLogout()">Sair</button>
+    `;
+  }
+}
+function doLogout(){currentUser=null;localStorage.removeItem('tr_current');location.reload();}
+
+// ── ADMIN ──
+function showAdmin(){
+  if(!currentUser){openAuth('login');showNotif('Faça login para acessar o painel','info');return;}
+  if(currentUser.email!==ADMIN_EMAIL){showNotif('Acesso restrito — apenas administradores.','info');return;}
+  document.getElementById('admin-user-info').textContent='Logado como: '+currentUser.email;
+  document.getElementById('adminModal').classList.add('open');
+  document.body.style.overflow='hidden';
+  adminSection('dashboard');
+}
+function closeAdmin(){document.getElementById('adminModal').classList.remove('open');document.body.style.overflow='';}
+function adminSection(sec){
+  document.querySelectorAll('.admin-sidebar a').forEach(a=>a.classList.remove('active'));
+  const nav = document.getElementById('adm-nav-'+sec);
+  if(nav) nav.classList.add('active');
+  const content = document.getElementById('adminContent');
+  if(sec==='dashboard'){
+    content.innerHTML=`
+      <h3 style="font-family:var(--font-display);color:var(--gold);margin-bottom:1.5rem">Dashboard</h3>
+      <div class="admin-stats-grid">
+        <div class="admin-stat"><div class="admin-stat-val">${db.properties.length}</div><div class="admin-stat-lbl">Imóveis</div></div>
+        <div class="admin-stat"><div class="admin-stat-val">${db.users.length}</div><div class="admin-stat-lbl">Usuários</div></div>
+        <div class="admin-stat"><div class="admin-stat-val">${db.messages.length}</div><div class="admin-stat-lbl">Mensagens</div></div>
+        <div class="admin-stat"><div class="admin-stat-val">${db.favorites.length}</div><div class="admin-stat-lbl">Favoritos</div></div>
+      </div>
+      <div style="background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);padding:1.5rem;border-radius:4px;margin-bottom:1rem">
+        <div style="font-size:12px;color:var(--gray);margin-bottom:0.5rem">Mensagens não lidas</div>
+        <div style="font-family:var(--font-display);font-size:2rem;color:var(--gold)">${db.messages.filter(m=>!m.read).length}</div>
+      </div>
+      <div style="background:rgba(201,168,76,0.05);border:1px solid var(--glass-border);padding:1.5rem;border-radius:4px">
+        <div style="font-size:12px;color:var(--gray);margin-bottom:0.5rem">Visitas agendadas</div>
+        <div style="font-family:var(--font-display);font-size:2rem;color:var(--gold)">${db.visits.length}</div>
+      </div>`;
+  }else if(sec==='imoveis'){
+    content.innerHTML=`<h3 style="font-family:var(--font-display);color:var(--gold);margin-bottom:1.5rem">Gerenciar Imóveis</h3>
+      <table class="admin-table">
+        <thead><tr><th>Nome</th><th>Cidade</th><th>Tipo</th><th>Preço</th><th>Ações</th></tr></thead>
+        <tbody>${db.properties.map(p=>`<tr>
+          <td style="font-weight:500">${p.name}</td>
+          <td>${p.city}</td>
+          <td>${p.type}</td>
+          <td style="color:var(--gold)">${p.price}</td>
+          <td>
+            <button onclick="adminEditProp('${p.id}')" style="background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.2);color:var(--gold);padding:4px 10px;font-size:10px;cursor:pointer;border-radius:2px;font-family:var(--font-body)">Editar</button>
+            <button onclick="adminDelProp('${p.id}')" style="background:rgba(139,26,26,0.1);border:1px solid rgba(139,26,26,0.2);color:var(--red2);padding:4px 10px;font-size:10px;cursor:pointer;border-radius:2px;font-family:var(--font-body);margin-left:6px">Excluir</button>
+          </td>
+        </tr>`).join('')}</tbody>
+      </table>`;
+  }else if(sec==='add'){
+    content.innerHTML=`<h3 style="font-family:var(--font-display);color:var(--gold);margin-bottom:1.5rem">Adicionar Imóvel</h3>
+      <div class="form-field"><label>Nome do Imóvel</label><input type="text" id="add-name" placeholder="Ex: Casa em Condomínio Fechado"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+        <div class="form-field"><label>Tipo</label><select id="add-type"><option>Casa</option><option>Apartamento</option><option>Condomínio</option><option>Casa de Luxo</option><option>Cobertura</option><option>Terreno</option><option>Sala Comercial</option><option>Galpão</option><option>Fazenda</option><option>Chácara</option><option>Kitnet</option><option>Duplex</option><option>Triplex</option><option>Lote</option></select></div>
+        <div class="form-field"><label>Categoria</label><select id="add-category"><option value="venda">Venda</option><option value="aluguel">Aluguel</option><option value="luxo">Luxo</option><option value="condominio">Condomínio</option><option value="cobertura">Cobertura</option><option value="terreno">Terreno</option><option value="comercial">Comercial</option><option value="destaque">Destaque</option><option value="oportunidade">Oportunidade</option><option value="novo">Novo</option></select></div>
+        <div class="form-field"><label>Cidade</label><select id="add-city"><option>Feira de Santana</option><option>Salvador</option><option>Maceió</option></select></div>
+        <div class="form-field"><label>Bairro</label><input type="text" id="add-neighborhood" placeholder="Ex: Centro"></div>
+        <div class="form-field"><label>Preço</label><input type="text" id="add-price" placeholder="Ex: R$ 450.000"></div>
+        <div class="form-field"><label>Área Total</label><input type="text" id="add-area" placeholder="Ex: 200m²"></div>
+        <div class="form-field"><label>Quartos</label><input type="number" id="add-rooms" min="0" value="3"></div>
+        <div class="form-field"><label>Banheiros</label><input type="number" id="add-baths" min="0" value="2"></div>
+        <div class="form-field"><label>Garagem</label><input type="number" id="add-garage" min="0" value="1"></div>
+        <div class="form-field"><label>Badge</label><select id="add-badge"><option value="sale">À Venda</option><option value="rent">Aluguel</option><option value="new">Novo</option><option value="hot">Oportunidade</option><option value="promo">Promoção</option></select></div>
+      </div>
+      <div class="form-field"><label>Descrição</label><textarea id="add-desc" rows="4" placeholder="Descreva o imóvel..."></textarea></div>
+      <div class="form-field"><label>Diferenciais (separados por vírgula)</label><input type="text" id="add-features" placeholder="Ex: Piscina, Churrasqueira, Área Gourmet"></div>
+      <button class="btn-primary" onclick="adminAddProp()"><i class="fas fa-plus"></i> Adicionar Imóvel</button>`;
+  }else if(sec==='mensagens'){
+    content.innerHTML=`<h3 style="font-family:var(--font-display);color:var(--gold);margin-bottom:1.5rem">Mensagens Recebidas</h3>
+      ${db.messages.length===0?'<p style="color:var(--gray)">Nenhuma mensagem ainda.</p>':
+      db.messages.map(m=>`<div style="background:var(--black3);border:1px solid ${m.read?'var(--glass-border)':'rgba(201,168,76,0.3)'};padding:1rem;border-radius:4px;margin-bottom:1rem">
+        <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem">
+          <strong style="font-size:13px">${m.name}</strong>
+          <span style="font-size:10px;color:var(--gray)">${new Date(m.date).toLocaleDateString('pt-BR')}</span>
+        </div>
+        <div style="font-size:11px;color:var(--gold);margin-bottom:0.5rem">${m.subject}</div>
+        <div style="font-size:12px;color:var(--gray2)">${m.phone} • ${m.email}</div>
+        <div style="font-size:12px;color:var(--white2);margin-top:8px;padding-top:8px;border-top:1px solid var(--glass-border)">${m.message}</div>
+        <button onclick="markRead('${m.id}')" style="margin-top:8px;background:transparent;border:1px solid var(--glass-border);color:var(--gray);padding:4px 12px;font-size:10px;cursor:pointer;border-radius:2px;font-family:var(--font-body)">${m.read?'Lida':'Marcar como lida'}</button>
+      </div>`).join('')}`;
+  }else if(sec==='usuarios'){
+    content.innerHTML=`<h3 style="font-family:var(--font-display);color:var(--gold);margin-bottom:1.5rem">Usuários Cadastrados</h3>
+      <table class="admin-table">
+        <thead><tr><th>Nome</th><th>E-mail</th><th>Telefone</th><th>Data</th></tr></thead>
+        <tbody>${db.users.map(u=>`<tr>
+          <td style="font-weight:500">${u.name}${u.email===ADMIN_EMAIL?' <span style="color:var(--gold);font-size:9px">[ADMIN]</span>':''}</td>
+          <td>${u.email}</td>
+          <td>${u.phone||'—'}</td>
+          <td style="color:var(--gray)">${new Date(u.date).toLocaleDateString('pt-BR')}</td>
+        </tr>`).join('')}</tbody>
+      </table>`;
+  }else if(sec==='favoritos'){
+    const favDetails = db.favorites.map(f=>{
+      const p=db.properties.find(x=>x.id===f.propId);
+      const u=db.users.find(x=>x.email===f.userId);
+      return {prop:p,user:u,date:f.date};
+    }).filter(f=>f.prop&&f.user);
+    content.innerHTML=`<h3 style="font-family:var(--font-display);color:var(--gold);margin-bottom:1.5rem">Imóveis Favoritos</h3>
+      ${favDetails.length===0?'<p style="color:var(--gray)">Nenhum favorito ainda.</p>':
+      `<table class="admin-table"><thead><tr><th>Imóvel</th><th>Usuário</th><th>Data</th></tr></thead><tbody>
+      ${favDetails.map(f=>`<tr><td>${f.prop.name}</td><td>${f.user.name}</td><td style="color:var(--gray)">${new Date(f.date).toLocaleDateString('pt-BR')}</td></tr>`).join('')}
+      </tbody></table>`}`;
+  }else if(sec==='relatorios'){
+    const byCity = {};
+    db.properties.forEach(p=>{byCity[p.city]=(byCity[p.city]||0)+1;});
+    content.innerHTML=`<h3 style="font-family:var(--font-display);color:var(--gold);margin-bottom:1.5rem">Relatórios</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+        ${Object.entries(byCity).map(([city,count])=>`<div style="background:var(--black3);border:1px solid var(--glass-border);padding:1rem;border-radius:4px"><div style="font-size:10px;color:var(--gray);margin-bottom:4px">${city}</div><div style="font-family:var(--font-display);font-size:1.5rem;color:var(--gold)">${count} imóveis</div></div>`).join('')}
+        <div style="background:var(--black3);border:1px solid var(--glass-border);padding:1rem;border-radius:4px"><div style="font-size:10px;color:var(--gray);margin-bottom:4px">Total de Mensagens</div><div style="font-family:var(--font-display);font-size:1.5rem;color:var(--gold)">${db.messages.length}</div></div>
+        <div style="background:var(--black3);border:1px solid var(--glass-border);padding:1rem;border-radius:4px"><div style="font-size:10px;color:var(--gray);margin-bottom:4px">Visitas Agendadas</div><div style="font-family:var(--font-display);font-size:1.5rem;color:var(--gold)">${db.visits.length}</div></div>
+      </div>`;
+  }
+}
+function adminAddProp(){
+  const name=document.getElementById('add-name').value.trim();
+  if(!name){showNotif('Informe o nome do imóvel','info');return;}
+  const cat=document.getElementById('add-category').value;
+  const badge=document.getElementById('add-badge').value;
+  const badgeLabels={sale:'À Venda',rent:'Aluguel',new:'Novo',hot:'Oportunidade',promo:'Promoção'};
+  const p={
+    id:'p'+Date.now(),
+    name,
+    type:document.getElementById('add-type').value,
+    category:cat,
+    city:document.getElementById('add-city').value,
+    neighborhood:document.getElementById('add-neighborhood').value||'—',
+    price:document.getElementById('add-price').value||'A consultar',
+    area:document.getElementById('add-area').value||'—',
+    rooms:parseInt(document.getElementById('add-rooms').value)||0,
+    baths:parseInt(document.getElementById('add-baths').value)||0,
+    garage:parseInt(document.getElementById('add-garage').value)||0,
+    badge,badgeLabel:badgeLabels[badge],
+    desc:document.getElementById('add-desc').value,
+    features:document.getElementById('add-features').value.split(',').map(f=>f.trim()).filter(Boolean),
+    favorite:false
+  };
+  db.properties.push(p);
+  allProperties.push(p);
+  saveDB();
+  filterAndRender('todos');
+  showNotif('Imóvel adicionado com sucesso!','success');
+  adminSection('imoveis');
+}
+function adminEditProp(id){
+  const p=db.properties.find(x=>x.id===id);
+  if(!p) return;
+  const newName=prompt('Novo nome do imóvel:',p.name);
+  if(!newName) return;
+  const newPrice=prompt('Novo preço:',p.price);
+  const newDesc=prompt('Nova descrição:',p.desc||'');
+  p.name=newName||p.name;
+  p.price=newPrice||p.price;
+  p.desc=newDesc||p.desc;
+  const ap=allProperties.find(x=>x.id===id);
+  if(ap){ap.name=p.name;ap.price=p.price;ap.desc=p.desc;}
+  saveDB();filterAndRender('todos');
+  showNotif('Imóvel atualizado!','success');
+  adminSection('imoveis');
+}
+function adminDelProp(id){
+  if(!confirm('Tem certeza que deseja excluir este imóvel?')) return;
+  db.properties=db.properties.filter(p=>p.id!==id);
+  allProperties=allProperties.filter(p=>p.id!==id);
+  saveDB();filterAndRender('todos');
+  showNotif('Imóvel excluído.','success');
+  adminSection('imoveis');
+}
+function markRead(id){
+  const m=db.messages.find(x=>x.id===id);
+  if(m){m.read=true;saveDB();adminSection('mensagens');}
+}
+
+// ── SCHEDULE ──
+function scheduleVisit(){
+  document.getElementById('scheduleModal').classList.add('open');
+}
+function confirmSchedule(){
+  const name=document.getElementById('sch-name').value.trim();
+  const phone=document.getElementById('sch-phone').value.trim();
+  const date=document.getElementById('sch-date').value;
+  const time=document.getElementById('sch-time').value;
+  if(!name||!phone||!date){showNotif('Preencha todos os campos','info');return;}
+  db.visits.push({name,phone,date,time,prop:currentPropId,created:new Date().toISOString()});
+  saveDB();
+  document.getElementById('scheduleModal').classList.remove('open');
+  showNotif('Visita agendada com sucesso! Thiago confirmará o horário via WhatsApp.','success');
+}
+
+// ── SHARE ──
+function shareProperty(){
+  const p=allProperties.find(x=>x.id===currentPropId);
+  if(!p) return;
+  const text=`Confira este imóvel: ${p.name} — ${p.price} em ${p.city}. Mais informações com Thiago Rodrigues: https://wa.me/5575988844834`;
+  if(navigator.share){navigator.share({title:p.name,text});}
+  else{navigator.clipboard.writeText(text);showNotif('Link copiado para a área de transferência!','success');}
+}
+
+// ── STATS ANIMATION ──
+function animateStats(){
+  document.querySelectorAll('.stat-num[data-target]').forEach(el=>{
+    const target=parseInt(el.dataset.target);
+    const suffix=el.dataset.suffix||'';
+    const prefix=el.dataset.prefix||'+';
+    let start=0;
+    const step=Math.ceil(target/60);
+    const timer=setInterval(()=>{
+      start=Math.min(start+step,target);
+      el.textContent=(start<target?prefix:prefix)+start+suffix;
+      if(start>=target) clearInterval(timer);
+    },30);
+  });
+}
+const statsObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){animateStats();statsObs.disconnect();}});
+},{threshold:0.3});
+const statsSection=document.querySelector('.stats-section');
+if(statsSection) statsObs.observe(statsSection);
+
+// ── NOTIFICATION ──
+function showNotif(msg, type='success'){
+  const notif=document.getElementById('notification');
+  const text=document.getElementById('notif-text');
+  const icon=notif.querySelector('i');
+  text.textContent=msg;
+  notif.className='notification show '+(type==='success'?'notification-success':type==='info'?'':'notification-error');
+  icon.className=type==='success'?'fas fa-check-circle':'fas fa-info-circle';
+  clearTimeout(notif._timer);
+  notif._timer=setTimeout(()=>notif.classList.remove('show'),4000);
+}
+
+// ── GENERIC MODAL ──
+function showModal(title, bodyHtml){
+  // Reuse admin content area for generic modals
+  // Simple: use prop modal with custom content
+  document.querySelector('.modal-gallery').style.display='none';
+  document.querySelector('.modal-body').innerHTML=`<div style="margin-bottom:1rem;display:flex;justify-content:space-between;align-items:center"><h2 style="font-family:var(--font-display);color:var(--gold)">${title}</h2><button onclick="closePropModal()" style="background:none;border:none;color:var(--gray);font-size:20px;cursor:pointer"><i class="fas fa-times"></i></button></div>${bodyHtml}`;
+  document.getElementById('propModal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+// ── CLOSE MODALS ON BG CLICK ──
+document.querySelectorAll('.modal-overlay').forEach(overlay=>{
+  overlay.addEventListener('click',e=>{
+    if(e.target===overlay){
+      overlay.classList.remove('open');
+      document.body.style.overflow='';
+      // Restore modal gallery if prop modal
+      if(overlay.id==='propModal'){
+        const g=document.querySelector('.modal-gallery');
+        if(g) g.style.display='';
+      }
+    }
+  });
+});
+
+// ── INIT ──
+initDB();
+filterAndRender('todos');
+if(currentUser) updateNavUser();
+updatePrazo();
+updateJuros();
+
+// Simulate AI suggestions with notification
+setTimeout(()=>{
+  if(!sessionStorage.getItem('notif_shown')){
+    showNotif('💡 IA encontrou imóveis recomendados para você!','success');
+    sessionStorage.setItem('notif_shown','1');
+  }
+},3000);
+</script>
+</body>
+</html>
